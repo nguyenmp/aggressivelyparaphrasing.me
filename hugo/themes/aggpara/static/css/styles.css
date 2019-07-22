@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+    margin: auto;
+    max-width: 800px;
+    line-height: 1.4rem;
+    padding: 1rem;
+    background-color: #291D05;
+}
+
+header, main, footer {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #FFDC96;
+    border-radius: 0.2rem;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 1.5rem 0rem;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+h6 {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+header > .nav-title {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+header > * + * {
+    padding-top: 1rem;
+}
+
+footer {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+/* Navigation Links */
+
+nav li {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+nav > ul > li + li:before {
+    content: " | "
+}
+
+/* Lists */
+
+main ul, ol {
+    margin-left: 2rem;
+}
+
+/* Links */
+
+a {
+    color: #261758;
+}
+
+
+/* Definition lists */
+
+dl {
+    margin: 1rem;
+    padding: 1rem;
+    border-left: 1rem solid #B99141;
+    background-color: #FBCF76;
+}
+
+dt {
+    font-weight: bold;
+    display: inline;
+}
+
+dt:after {
+    content: ":";
+}
+
+dd {
+    padding: 1rem;
+}
+
+/* Blockquotes */
+
+blockquote {
+    margin: 1rem;
+    padding: 1rem;
+    border-left: 1rem solid #B99141;
+    background-color: #FBCF76;
+}
+
+cite:before {
+    content: "—";
+}
+
+/* Code styling */
+
+code, pre {
+    font-family: 'Courier New', Courier, monospace;
+    color: #85E2D3;
+    background-color: #12493F;
+}
+code {
+    padding: 0.2rem;
+}
+pre {
+    padding: 1rem;
+    overflow: scroll;
+}
+
+/* Horizontal rule */
+
+hr {
+    border: 2px solid #291D05;
+}

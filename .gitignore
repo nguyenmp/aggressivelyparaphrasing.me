@@ -1,0 +1,17 @@
+# MacOS specific metadata from their filesystem (contains machine specific configs)
+.DS_Store
+
+# Project configuration for my personal VSCode (contains machine specific configs)
+.vscode/
+
+# Build output from hugo (contains build artifacts)
+hugo/public
+
+# The virutalenv I use for testing scorsese changes (contains simlinked binaries)
+scorsese/virtualenv
+
+# This is generated when running pip install -e . and I find it unnecessary
+*.egg-info
+
+# Compiled python bytecode, this can be rebuilt from source and shouldn't be committed
+*.pyc

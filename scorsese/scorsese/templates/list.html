@@ -1,0 +1,24 @@
+<form>
+    <label>Page Name</label><input type="text">
+    <button>Create New</button>
+</form>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Is Draft?</th>
+        <th>Is Changed?</th>
+        <th>Edit</th>
+        <th>Preview</th>
+        <th>Production</th>
+    </tr>
+    {% for fullpath, frontmatter in content_files %}
+        <tr>
+            <td><a href="edit?path={{fullpath | urlencode}}">{{ frontmatter['attributes']['title'] }}</a></td>
+            <td>{{ frontmatter['attributes']['draft'] }}</td>
+            <td>Unknown</td>
+            <td>Edit</td>
+            <td>Preview</td>
+            <td>Production</td>
+        </tr>
+    {% endfor %}
+</table>
