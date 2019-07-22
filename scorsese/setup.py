@@ -11,5 +11,6 @@ setup(
     install_requires=[
         'flask',
         'python-frontmatter',
+        'uwsgi',
     ],
 )

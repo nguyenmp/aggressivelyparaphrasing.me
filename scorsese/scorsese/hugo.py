@@ -6,7 +6,7 @@ import os
 import re
 import subprocess
 
-import frontmatter
+import frontmatter as parser
 
 def build(path, with_drafts=False):
     '''
@@ -26,7 +26,7 @@ def get_content_file(path):
     with open(path, 'r') as handle:
         content = handle.read()
 
-    frontmatter = frontmatter.loads(content)
+    frontmatter = parser.loads(content)
     return (content, frontmatter)
 
 

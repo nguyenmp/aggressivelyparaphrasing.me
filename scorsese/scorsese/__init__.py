@@ -1,3 +1,4 @@
+import os
 import shutil
 import subprocess
 
@@ -55,7 +56,7 @@ def apply_change_to_preview(path, content):
     '''
     Writes the given content to the given path
     '''
-    with open(os.path.join(PREVIEW_PATH, path), 'rw') as handle:
+    with open(os.path.join(PREVIEW_PATH, path), 'w') as handle:
         handle.write(content)
 
 

@@ -81,11 +81,46 @@ I think what I will do is add the default nginx config to version control.  Then
 > nginx -s reload
 > ```
 
+I eventually settled with a minimal config that would just render my hugo site on localhost:8080 properly.
+
+```
+events {
+    worker_connections  1024;
+}
+
+http {
+    server {
+        listen       8080;
+        server_name  localhost;
+
+        include mime.types;
+
+        location / {
+            root   /Users/marknguyen/MyRepositories/aggressivelyparaphrasing/hugo/public;
+            index  index.html;
+        }
+
+    }
+}
+```
 
 
 ## uWSGI - The Python Gateway
 
 My primitive understanding of this is that nginx will receive an HTTP request, and determine if it needs to go to a a python app based on the rules given to it, then gives it to uWSGI to manage the python stuff.
+
+---
+
+I started wtih following their [official getting started guide](https://uwsgi-docs.readthedocs.io/en/latest/WSGIquickstart.html).
+
+```
+pip install uwsgi
+```
+
+Then running is just a matter of:
+```
+uwsgi --socket 127.0.0.1:3031 --wsgi scorsese --callable app --processes 4 --threads 2 --stats 127.0.0.1:9191
+```
 
 # Content
 

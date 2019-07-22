@@ -13,8 +13,8 @@
     </tr>
     {% for fullpath, frontmatter in content_files %}
         <tr>
-            <td><a href="edit?path={{fullpath | urlencode}}">{{ frontmatter['attributes']['title'] }}</a></td>
-            <td>{{ frontmatter['attributes']['draft'] }}</td>
+            <td><a href="/admin/edit?path={{fullpath | urlencode}}">{{ frontmatter['title'] }}</a></td>
+            <td>{{ frontmatter['draft'] }}</td>
             <td>Unknown</td>
             <td>Edit</td>
             <td>Preview</td>
