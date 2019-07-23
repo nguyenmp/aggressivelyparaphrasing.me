@@ -164,6 +164,17 @@ Keep in mind that the "development" and "production" aspects of content distribu
 
 Beyond code, there's some things that must be documented, like server configuration and external dependencies not covered by code or configuration.  While they are external to this repository, they are critical to running this service.
 
+## DNS
+
+MX for href.cat for email
+ALIAS aggressivelyparaphrasing.me to the domain provided by nearlyfreespeech.net
+ALIAS www.aggressivelyparaphrasing.me to the domain provided by aggressivelyparaphrasing.me
+ALIAS dev.aggressivelyparaphrasing.me to the domain provided by nearlyfreespeech.net
+ALIAS admin.aggressivelyparaphrasing.me to the domain provided by nearlyfreespeech.net
+ALIAS href.cat to the domain provided by nearlyfreespeech.net
+
+nginx will use virtual servers to handle which things go where.
+
 Although not set up yet, I intend to:
 1. get the domain from NameCheap
 2. set up the SSL certificate with LetsEncrypt
