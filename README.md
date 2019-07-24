@@ -182,13 +182,6 @@ DNS Records:
 
 nginx runs on the nearlyfreespeach.net host and uses the HOST header to point specific servers to directores or processes
 
-## SSL/TSL
-
-> If you don't already have a certificate provider, the most popular option is Let's Encrypt, a free service. The easiest way to use Let's Encrypt certificates is to type the following command in the shell:
-
-> `YourPrompt> tls-setup.sh`
-
-So that's what I did...  I don't think it worked.
 
 ## Git
 
@@ -300,6 +293,59 @@ And one that runs the python admin code:
 | Command Line | /home/private/aggressivelyparaphrasing.me/uwsgi/run.sh |
 | Working Directory | /home/public (this doesn't really matter) |
 | Run Daemon As | me (web doesn't work because permissions) |
+
+
+## SSL/TSL
+
+> If you don't already have a certificate provider, the most popular option is Let's Encrypt, a free service. The easiest way to use Let's Encrypt certificates is to type the following command in the shell:
+
+> `YourPrompt> tls-setup.sh`
+
+So that's what I did...  I don't think it worked.
+
+I noticed that the "well known" challenge failed.  It was also noted in the FAQ, they mention it might not work with special web daemons (like nginx).
+
+> This script handles the simplest, most common cases. If your site uses custom web daemons or custom access controls, the automatic scripts may not work for you. For such cases, we provide the dehydrated ACME client; it provides hooks to install and clean up challenges that you can use to interface with whatever you're doing.
+> 
+> [How do I set up HTTPS (TLS) for my web site?
+](https://members.nearlyfreespeech.net/faq?q=SSLCertificates#SSLCertificates)
+
+I dug around and found the ["Well Known" docs in dehydrated](https://github.com/lukas2511/dehydrated/blob/master/docs/wellknown.md).  Apparently, well known is a form of challenge and I was lucky enough to notice this line:
+
+```
+# INFO: Using main config file /usr/local/etc/dehydrated/config
+```
+
+And that pointed me to:
+
+```bash
+$ cat /usr/local/etc/dehydrated/config
+AUTO_CLEANUP='yes'
+BASEDIR='/home/private/.dehydrated/'
+WELLKNOWN='/home/public/.well-known/acme-challenge/'
+HOOK='/usr/local/lets-nfsn.sh/nfsn-hook.sh'
+```
+
+So in the end, I figured I just needed to add the following line to all my servers in my nginx.conf:
+
+```
+server {
+  [...]
+  location ^~ /.well-known/acme-challenge {
+    alias /home/public/.well-known/acme-challenge/;
+  }
+  [...]
+}
+```
+
+It sounds like NearlyFreeSpeech will automatically run this command for me so as long as it works I'll always be rotating my certificates before expiry.  That also means I need to keep the well known paths for my domains to automatically prove they are in my possession.
+
+In the end, the command worked after adding the above well-known routes:
+
+```
+$ tls-setup.sh
+```
+
 
 ## TODO
 
