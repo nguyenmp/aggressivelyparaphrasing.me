@@ -207,6 +207,15 @@ This allowed me to run the clone:
 git clone git@github.com:nguyenmp/aggressivelyparaphrasing.me.git
 ```
 
+Then initialize the prod and dev sites:
+
+```
+git clone git@github.com:nguyenmp/aggressivelyparaphrasing.me.git ~/prod/
+cp -r ~/prod/ ~/dev/
+hugo --source ~/prod/hugo
+hugo -D --source ~/dev/hugo
+```
+
 ## Nginx
 I configured NearlyFreeSpeech to have a custom HTTP server.
 
@@ -256,7 +265,6 @@ In the admin panel, I add the following:
 | Target Port | 8080 |
 
 Most of the values like Base URL and Document Root are things I can configure in nginx, and I prefer to keep them in source control anyways.  Really, I just need to set the target port to get the job done.
-
 
 ## TODO
 
