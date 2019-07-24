@@ -266,6 +266,41 @@ In the admin panel, I add the following:
 
 Most of the values like Base URL and Document Root are things I can configure in nginx, and I prefer to keep them in source control anyways.  Really, I just need to set the target port to get the job done.
 
+## uWSGI
+
+It was already installed so I did nothing.
+
+```
+$ pip3 install uwsgi
+Requirement already satisfied: uwsgi in /usr/local/lib/python3.7/site-packages (2.0.18)
+```
+
+I did have to install the dependency packages though:
+
+```
+pip3 install -e ~/aggressivelyparaphrasing.me/scorsese/ --user
+```
+
+## Daemon
+
+I also configured the a daemon that runs nginx:
+
+| Field | Value |
+|--|----|
+| Tag | nginxtag |
+| Command Line | /home/private/nginx-1.17.2/objs/nginx |
+| Working Directory | /home/public (this doesn't really matter) |
+| Run Daemon As | me (web doesn't work because permissions) |
+
+And one that runs the python admin code:
+
+| Field | Value |
+|--|----|
+| Tag | scorsesetag |
+| Command Line | /home/private/aggressivelyparaphrasing.me/uwsgi/run.sh |
+| Working Directory | /home/public (this doesn't really matter) |
+| Run Daemon As | me (web doesn't work because permissions) |
+
 ## TODO
 
 Although not set up yet, I intend to:
