@@ -14,6 +14,14 @@ PROD_PATH = os.path.join(CONTAINER, 'production')
 REPOSITORY = None
 
 
+@app.route('/')
+def home():
+    '''
+    Home
+    '''
+    return "Hello World!"
+
+
 @app.route('/admin')
 def index():
     '''

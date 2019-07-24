@@ -164,20 +164,120 @@ Keep in mind that the "development" and "production" aspects of content distribu
 
 Beyond code, there's some things that must be documented, like server configuration and external dependencies not covered by code or configuration.  While they are external to this repository, they are critical to running this service.
 
+Most of this is related to the FreeBSD instance we get from NearlyFreeSpeech, but it's worth documenting since these are specific to maintaining the one instance that matters.
+
 ## DNS
 
-MX for href.cat for email
-ALIAS aggressivelyparaphrasing.me to the domain provided by nearlyfreespeech.net
-ALIAS www.aggressivelyparaphrasing.me to the domain provided by aggressivelyparaphrasing.me
-ALIAS dev.aggressivelyparaphrasing.me to the domain provided by nearlyfreespeech.net
-ALIAS admin.aggressivelyparaphrasing.me to the domain provided by nearlyfreespeech.net
-ALIAS href.cat to the domain provided by nearlyfreespeech.net
+DNS Registrations:
+* aggressivelyparaphrasing.me is managed by namecheap.com
+* [href.cat](href.cat) is managed by gandi.net
 
-nginx will use virtual servers to handle which things go where.
+DNS Records:
+* MX for [href.cat](href.cat) for email
+* ALIAS aggressivelyparaphrasing.me to the domain provided by nearlyfreespeech.net
+* ALIAS www.aggressivelyparaphrasing.me to the domain provided by aggressivelyparaphrasing.me
+* ALIAS dev.aggressivelyparaphrasing.me to the domain provided by nearlyfreespeech.net
+* ALIAS admin.aggressivelyparaphrasing.me to the domain provided by nearlyfreespeech.net
+* ALIAS [href.cat](href.cat) to the domain provided by nearlyfreespeech.net
+
+nginx runs on the nearlyfreespeach.net host and uses the HOST header to point specific servers to directores or processes
+
+## SSL/TSL
+
+> If you don't already have a certificate provider, the most popular option is Let's Encrypt, a free service. The easiest way to use Let's Encrypt certificates is to type the following command in the shell:
+
+> `YourPrompt> tls-setup.sh`
+
+So that's what I did...  I don't think it worked.
+
+## Git
+
+NearlyFreeSpeech came with git installed.
+
+I just needed to generate keys based on [GitHub docs](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent "Generating a new SSH key and adding it to the ssh-agent"):
+
+```
+ssh-keygen -t rsa -b 4096 -C "aggressivelyparaphrasingme@nearlyfreespeech.net"
+```
+
+Then add them to [my GitHub account's authroized keys](https://github.com/settings/keys).
+
+This allowed me to run the clone:
+```
+git clone git@github.com:nguyenmp/aggressivelyparaphrasing.me.git
+```
+
+## Nginx
+I configured NearlyFreeSpeech to have a custom HTTP server.
+
+Then I built nginx from scratch cause I didn't have privileges to install using the package manager and I couldn't figure out ports.  I need the --prefix argument to configure to prevent it from running against hard-coded paths in /usr/local/nginx which is owned by root on NearlyFreeSpeech.  Instead, I set it to /home/private/nginx which is in my personal user's space and created by me.  This idea wasn't novel to me, it was [described by Perlkonig
+on the member's support forum](https://members.nearlyfreespeech.net/forums/viewtopic.php?t=8813) in passing and I found it very insightful and inspiring.
+
+Download and build from source.  This is mostly taken from [the official guide](http://nginx.org/en/docs/configure.html):
+
+```
+curl http://nginx.org/download/nginx-1.17.2.tar.gz -o nginx-1.17.2.tar.gz
+tar -zxvf nginx-1.17.2.tar.gz
+mkdir nginx
+cd nginx-1.17.2
+./configure --prefix=/home/private/nginx
+make
+```
+
+Create the logging folder that nginx is configured to use.  This must be done or else the latter nginx invocation will fail to launch:
+
+```
+mkdir /home/private/nginx/logs/
+```
+
+Install the default configuration, then our own on top:
+```
+mkdir ~/nginx/conf/
+cp -r ~/nginx-1.17.2/conf ~/nginx/conf/
+rm ~/nginx/conf/nginx.conf
+ln -s ~/aggressivelyparaphrasing.me/nginx/nginx.conf ~/nginx/conf/nginx.conf
+```
+
+Then launch the nginx binary that we just built:
+```
+~/nginx-1.17.2/objs/nginx
+```
+
+## Proxy
+
+In the NearlyFreeSpeech admin console, I added a "proxy" which I think just describes how to forward requests against certain roots and ports to which ports and additional roots.  In my case, since I cannot run nginx as root without root access, I cannot listen to port 80.  Thus, I listen to port 8080 instead.
+
+In the admin panel, I add the following:
+| Field | Value |
+|--|----|
+| Protocol | HTTP |
+| Base URL | / |
+| Document Root | / |
+| Target Port | 8080 |
+
+Most of the values like Base URL and Document Root are things I can configure in nginx, and I prefer to keep them in source control anyways.  Really, I just need to set the target port to get the job done.
+
+
+## TODO
 
 Although not set up yet, I intend to:
-1. get the domain from NameCheap
-2. set up the SSL certificate with LetsEncrypt
-3. set up hosting from https://www.nearlyfreespeech.net
-4. set up email from mxroute.com
-5. Set up mail forwarding from DNS
+1. set up the SSL certificate with LetsEncrypt
+2. set up email from mxroute.com
+3. Set up mail forwarding from DNS
+
+# Local Setup
+
+1. Install nginx: `brew install nginx`
+2. Install the nginx config file: `ln -s nginx/nginx.conf /usr/local/etc/nginx/nginx.conf` 
+3. Make nginx pick up the changes: `nginx` or `nginx -s reload`, depending on if it's already running
+4. Add the following to your `/etc/hosts` for local development to redirect DNS pointers to your local machine.  This allows you to test nginx stuff still:
+```
+127.0.0.1	aggressivelyparaphrasing.me
+127.0.0.1	dev.aggressivelyparaphrasing.me
+127.0.0.1	admin.aggressivelyparaphrasing.me
+```
+5. Launch the admin python server: `cd aggressivelyparaphrasing/scorsese && uwsgi --socket 127.0.0.1:3031 --wsgi scorsese --callable app --processes 4 --threads 2 --stats 127.0.0.1:9191`
+6. Create a folder for the development static site: `git clone git@github.com:nguyenmp/aggressivelyparaphrasing.me.git /usr/local/etc/ap_dev`
+7. Build the dev static site with drafts: `hugo -D --source /usr/local/etc/ap_dev/hugo`
+8. Create a folder for the production static site: `git clone git@github.com:nguyenmp/aggressivelyparaphrasing.me.git /usr/local/etc/ap_prod`
+9. Build the prod static site without drafts: `hugo --source /usr/local/etc/ap_prod/hugo`
