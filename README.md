@@ -351,9 +351,8 @@ Finally, in the NearlyFreeSpeech admin panel for the website, I enabled "Canonic
 ## TODO
 
 Although not set up yet, I intend to:
-1. set up the SSL certificate with LetsEncrypt
-2. set up email from mxroute.com
-3. Set up mail forwarding from DNS
+1. set up email from mxroute.com
+2. Set up mail forwarding from DNS
 
 # Local Setup
 
