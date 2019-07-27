@@ -14,7 +14,6 @@ This page has samples of all the different website components I use so that I ca
 ##### Header 5
 ###### Header 6
 
-
 ## Definition lists
 
 
