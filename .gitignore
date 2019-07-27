@@ -15,3 +15,6 @@ scorsese/virtualenv
 
 # Compiled python bytecode, this can be rebuilt from source and shouldn't be committed
 *.pyc
+
+# The local development sub-git containers for dev and prod
+scorsese/container/

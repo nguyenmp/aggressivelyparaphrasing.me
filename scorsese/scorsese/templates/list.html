@@ -1,22 +1,50 @@
-<form>
-    <label>Page Name</label><input type="text">
-    <button>Create New</button>
+<h1>Admin Page</h1>
+
+<h2>Create A New Page</h2>
+<form action="/new" method="post">
+    <p><label>Page Name</label></p>
+    <span>aggressivelyparaphrasing.me/hugo/content/posts/</span><input type="text" placeholder="foo-bar" name="file_name"><span>.md</span>
+    <div><button type="submit">Create New</button></div>
 </form>
+
+<h2>Clear out and rebuild</h2>
+<p>Warning!  This will trash any unsaved progress in either space</p>
+<form action="/reset" method="post">
+    <input type="text" hidden name="environment" value="prod">
+    <button type="submit">Reset Prod</button>
+</form>
+
+<form action="/reset" method="post">
+    <input type="text" hidden name="environment" value="dev">
+    <button type="submit">Reset Dev</button>
+</form>
+
+<h2>Push Unsaved Changes</h2>
+<form action="/save" method="post">
+    <button type="submit">Save and Push Changes</button>
+</form>
+<ul>
+    {% for change in status %}
+        <li><a href="/diff?path={{change.destination or change.target}}">{{ change.description }} {{ change.target }}</a></li>
+    {% endfor %}
+</ul>
+
+<h2>Current Contents</h2>
 <table>
     <tr>
-        <th>Name</th>
-        <th>Is Draft?</th>
-        <th>Is Changed?</th>
+        <th>Title</th>
+        <th>Path</th>
+        <th>Is Draft</th>
         <th>Edit</th>
         <th>Preview</th>
         <th>Production</th>
     </tr>
-    {% for fullpath, frontmatter in content_files %}
+    {% for shortpath, frontmatter in content_files %}
         <tr>
-            <td><a href="/admin/edit?path={{fullpath | urlencode}}">{{ frontmatter['title'] }}</a></td>
+            <td>{{ frontmatter['title'] }}</a></td>
+            <td>{{ shortpath }}</a></td>
             <td>{{ frontmatter['draft'] }}</td>
-            <td>Unknown</td>
-            <td>Edit</td>
+            <td><a href="post?path={{ shortpath | urlencode }}">Edit</a></td>
             <td>Preview</td>
             <td>Production</td>
         </tr>

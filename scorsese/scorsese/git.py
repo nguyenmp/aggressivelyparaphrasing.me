@@ -2,6 +2,8 @@
 Wrapper API around git commands
 '''
 
+import collections
+import re
 import subprocess
 
 def commit(path, message):
@@ -60,3 +62,81 @@ def clone(directory, repository, name):
         '-C', directory,
         'clone', repository, name,
     ])
+
+def status(path):
+    'Adds all unstaged files and then returns the resulting "status" as a pair of modifications and file path'
+
+    # Add all contents to staging area
+    subprocess.check_call([
+        'git',
+        '-C', path,
+        'add', '.',
+    ])
+
+    # Run parsable git-status
+    output = subprocess.check_output([
+        'git',
+        '-C', path,
+        'status', '--porcelain'
+    ]).decode('utf8')
+
+    # Parse output
+    return [parse_porcelain_line(line) for line in output.splitlines()]
+
+
+def diff(container, path):
+    '''
+    Returns the output of running git diff on the given file
+
+    Takes the folder that has the .git in it, and the path to show the cached diff with
+    '''
+    return subprocess.check_output([
+        'git', 'diff',
+        '--cached',
+        path,
+    ], cwd=container).decode('utf8')
+
+
+def parse_porcelain_line(line):
+    '''
+    Returns a Change tuple, parsed from a single line of porcelain output
+    '''
+    match = re.match('^(M|A|D|R|C)  (.*)$', line)
+    short_name = match.group(1)
+    target = match.group(2)
+    description = SHORT_NAME_TO_DESCRIPTION[short_name]
+
+    # Parse out the source and destination for renames and copies
+    source = None
+    destination = None
+    match = re.match('^(.*) -> (.*)$', target)
+    if match:
+        source = match.group(1)
+        destination = match.group(2)
+
+    # Group them all into a tuple and return
+    return Change(
+        short_name=short_name,
+        description=description,
+        target=target,
+        source=source,
+        destination=destination,
+    )
+
+
+Change = collections.namedtuple('Person', [
+    'short_name',  # The character describing the type of change
+    'description',  # The english word that describes the type change
+    'target',  # The target for this change; either the filename or "source -> destination"
+    'source',  # Only used for rename and copy; left side of "->"
+    'destination',  # Only used for rename and copy; right side of "->"
+])
+
+
+SHORT_NAME_TO_DESCRIPTION = {
+    'M': 'Modified',
+    'A': 'Added',
+    'D': 'Deleted',
+    'R': 'Renamed',
+    'C': 'Copied',
+}

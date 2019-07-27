@@ -1,3 +1,11 @@
-<button>Preview</button>
-<button>Save</button>
-<textarea style="width: 100%; height: 100%;">{{content | escape}}</textarea>
+<html>
+    <head></head>
+    <body>
+        <form style="height: 100%; flex-flow: column; display: flex;" action="/post" method="post">
+            <h1>Edit {{ shortpath}}</h1>
+            <button type="submit">Stage To Preview</button>
+            <input type="text" hidden name="path" value="{{ shortpath }}">
+            <textarea style="width: 100%; white-space: pre-wrap; flex-grow: 1;" name="content">{{content | escape}}</textarea>
+        </form>
+    </body>
+</html>
