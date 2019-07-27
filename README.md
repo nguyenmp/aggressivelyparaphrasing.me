@@ -348,6 +348,17 @@ $ tls-setup.sh
 
 Finally, in the NearlyFreeSpeech admin panel for the website, I enabled "Canonical HTTPS".  I think what's happening is NearlyFreeSpeech is running an HTTP server in front of all their customers and downgrading the connection security on their end before it reaches us.  This allows them to do cool things like HTTP rewrites for us, but it also means connections to me aren't on traditional ports like 443 or 80.  I can't use the port number to determine if the connection is secure because it's 8080.
 
+## Passwords
+
+The "preview" or dev subdomain and admin subdomain are both password protected.  You can just generate one like so:
+
+```
+htpasswd -c /home/private/htpasswd_file.txt "De6JWFkaV38q34N5kz8tkX9V2Hw2ZZnm"
+```
+
+The above file is read by nginx and is configured in nginx.conf.
+
+
 ## TODO
 
 Although not set up yet, I intend to:
