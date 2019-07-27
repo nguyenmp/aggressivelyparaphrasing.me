@@ -8,12 +8,14 @@ body {
     margin: auto;
     max-width: 800px;
     line-height: 1.4rem;
-    padding: 1rem;
     background-color: #291D05;
 }
 
+body > * + * {
+    margin-top: 1rem;
+}
+
 header, main, footer {
-    margin: 1rem;
     padding: 1rem;
     background-color: #FFDC96;
     border-radius: 0.2rem;
@@ -74,6 +76,16 @@ nav li {
     display: inline-block;
     font-size: 1rem;
     line-height: 1rem;
+}
+
+.nav-row {
+    display: flex;
+}
+
+.nav-fill {
+    white-space: nowrap;
+    overflow-x: scroll;
+    display: inline-block
 }
 
 nav > ul > li + li:before {
