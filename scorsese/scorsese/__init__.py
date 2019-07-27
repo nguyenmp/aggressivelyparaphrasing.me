@@ -114,7 +114,8 @@ def create():
 @app.route('/reset', methods=["POST"])
 def reset():
     name = request.form['environment']
-    recreate(name)
+    branch = request.form['branch']
+    recreate(name, branch)
     return redirect(url_for('index'))
 
 
@@ -138,7 +139,7 @@ def save():
     return redirect(url_for('index'))
 
 
-def recreate(environment):
+def recreate(environment, branch=None):
     '''
     Nukes any existing content from the environment's path and starts off
     clean from master.  This means that content should always be up to date.
@@ -160,6 +161,8 @@ def recreate(environment):
     shutil.rmtree(path)
     directory, name = os.path.split(path)
     git.clone(directory, REPOSITORY, name)
+    if branch:
+        git.checkout(path, branch)
     hugo.build(hugo_path, with_drafts=with_drafts)
     print("Recreated")
 

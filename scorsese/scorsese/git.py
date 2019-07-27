@@ -32,6 +32,18 @@ def push(path):
     ])
 
 
+def checkout(path, branch):
+    '''
+    Runs "git -C {{path}} checkout {{branch}}" on the given path
+    '''
+    subprocess.check_call([
+        'git',
+        '-C', path,
+        'checkout',
+        branch,
+    ])
+
+
 def ensure_up_to_date_and_unchanged(path):
     '''
     Make sure we're up to date and that we don't have any unsaved changes applied
