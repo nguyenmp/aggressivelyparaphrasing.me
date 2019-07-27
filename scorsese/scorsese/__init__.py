@@ -17,7 +17,7 @@ from . import git, hugo
 
 app = Flask(__name__)
 
-CONTAINER = './container'  # On the server, this is set to /home/private
+CONTAINER = '/home/private'
 PREVIEW_DIR_NAME = 'dev'
 PROD_DIR_NAME = 'prod'
 PREVIEW_PATH = os.path.join(CONTAINER, PREVIEW_DIR_NAME)
