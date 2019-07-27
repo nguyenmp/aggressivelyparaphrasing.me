@@ -148,14 +148,19 @@ def recreate(environment):
     print("Recreating")
     if environment == 'dev':
         path = PREVIEW_PATH
+        hugo_path = PREVIEW_HUGO_PATH
+        with_drafts = True
     elif environment == 'prod':
         path = PROD_PATH
+        hugo_path = PROD_HUGO_PATH
+        with_drafts = False
     else:
         raise Exception('Unknown environment: {}'.format(environment))
 
     shutil.rmtree(path)
     directory, name = os.path.split(path)
     git.clone(directory, REPOSITORY, name)
+    hugo.build(hugo_path, with_drafts=with_drafts)
     print("Recreated")
 
 
