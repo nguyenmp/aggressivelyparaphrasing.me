@@ -354,7 +354,28 @@ Although not set up yet, I intend to:
 1. set up email from mxroute.com
 2. Set up mail forwarding from DNS
 
+# Deploys
+
+SSH information is available from NearlyFreeSpeech.NET.
+
+For only the HTML from hugo, use the admin page:
+* You can reset prod to latest master
+* You can reset dev to any branch, we will reclone to get latest remote
+* Any edits through the web-UI will automatically be built and deployed to dev
+
+For changes to scorsese (aka python), you will need to SSH into the machine, do a git pull on ~/aggressivelyparaphrasing.me/, then in the NearlyFreeSpeech.net web-UI, send a "KILL" signal to "scorsesetag".  On that same page, you should eventually see under "Recent Event Logs": "Daemon scorsesetag stopped" and "Fast start requested for daemon scorsesetag".
+
+For config changes to nginx, do a git pull, then `nginx -s reload` or something like that.  Use the custom built nginx, and double check reload is the right argument using `nginx -h`.
+
+For config changes to uWSGI, edit the run.sh file and then send the "KILL" signal to "scorsesetag".
+
+SSH information is available from NearlyFreeSpeech.NET and the password is somewhere good.
+
 # Local Setup
+
+How to run and test at desk:
+
+## Nginx webserver
 
 1. Install nginx: `brew install nginx`
 2. Install the nginx config file: `ln -s nginx/nginx.conf /usr/local/etc/nginx/nginx.conf` 
@@ -370,3 +391,12 @@ Although not set up yet, I intend to:
 7. Build the dev static site with drafts: `hugo -D --source /usr/local/etc/ap_dev/hugo`
 8. Create a folder for the production static site: `git clone git@github.com:nguyenmp/aggressivelyparaphrasing.me.git /usr/local/etc/ap_prod`
 9. Build the prod static site without drafts: `hugo --source /usr/local/etc/ap_prod/hugo`
+
+## Only scorsese
+
+1. Edit scorsese/__init__.py to use ./container instead of /home/private
+2. Run `FLASK_APP=scorsese FLASK_DEBUG=True python3 -m flask run`
+
+## Only hugo
+
+1. Run `hugo -D --source hugo/` to build with drafts
