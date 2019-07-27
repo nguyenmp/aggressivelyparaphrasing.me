@@ -2,6 +2,7 @@
 
 <h2>Create A New Page</h2>
 <form action="/new" method="post">
+    <input type="text" hidden name="csrf" value="{{ csrf }}">
     <p><label>Page Name</label></p>
     <span>aggressivelyparaphrasing.me/hugo/content/posts/</span><input type="text" placeholder="foo-bar" name="file_name"><span>.md</span>
     <div><button type="submit">Create New</button></div>
@@ -11,18 +12,21 @@
 <p>Warning!  This will trash any unsaved progress in either space</p>
 <form action="/reset" method="post">
     <input type="text" hidden name="environment" value="prod">
+    <input type="text" hidden name="csrf" value="{{ csrf }}">
     <input type="text" hidden name="branch" value="master">
     <button type="submit">Reset Prod</button>
 </form>
 
 <form action="/reset" method="post">
     <input type="text" hidden name="environment" value="dev">
+    <input type="text" hidden name="csrf" value="{{ csrf }}">
     <input type="text" name="branch" value="master">
     <button type="submit">Reset Dev</button>
 </form>
 
 <h2>Push Unsaved Changes</h2>
 <form action="/save" method="post">
+    <input type="text" hidden name="csrf" value="{{ csrf }}">
     <button type="submit">Save and Push Changes</button>
 </form>
 <ul>
