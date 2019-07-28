@@ -406,7 +406,7 @@ How to run and test at desk:
 ## Only scorsese
 
 1. Edit scorsese/__init__.py to use ./container instead of /home/private
-2. Run `FLASK_APP=scorsese FLASK_DEBUG=True python3 -m flask run`
+2. Run `FLASK_APP=scorsese FLASK_DEBUG=True SECRET_KEY=$(head -c 64 /dev/urandom | base64) python3 -m flask run`
 
 ## Only hugo
 
