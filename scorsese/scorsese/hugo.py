@@ -71,7 +71,7 @@ def get_url_path(short_path):
 
     For example:
     _index.md => /
-    posts/oreo-paper.md => posts/oreo-paper
-    sample.md => sample
+    posts/oreo-paper.md => posts/oreo-paper/
+    sample.md => sample/
     '''
-    return re.sub('(_index\.md|\.md)', '', short_path)
+    return re.sub('(_index\.md|\.md)', '/', short_path)
