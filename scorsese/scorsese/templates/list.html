@@ -1,58 +1,66 @@
-<h1>Admin Page</h1>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Admin Page</h1>
 
-<h2>Create A New Page</h2>
-<form action="/new" method="post">
-    <input type="text" hidden name="csrf" value="{{ csrf }}">
-    <p><label>Page Name</label></p>
-    <span>aggressivelyparaphrasing.me/hugo/content/posts/</span><input type="text" placeholder="foo-bar" name="file_name"><span>.md</span>
-    <div><button type="submit">Create New</button></div>
-</form>
+        <h2>Create A New Page</h2>
+        <form action="/new" method="post">
+            <input type="text" hidden name="csrf" value="{{ csrf }}">
+            <p><label>Page Name</label></p>
+            <span>aggressivelyparaphrasing.me/hugo/content/posts/</span><input type="text" placeholder="foo-bar" name="file_name"><span>.md</span>
+            <div><button type="submit">Create New</button></div>
+        </form>
 
-<h2>Clear out and rebuild</h2>
-<p>Warning!  This will trash any unsaved progress in either space</p>
-<form action="/reset" method="post">
-    <input type="text" hidden name="environment" value="prod">
-    <input type="text" hidden name="csrf" value="{{ csrf }}">
-    <input type="text" hidden name="branch" value="master">
-    <button type="submit">Reset Prod</button>
-</form>
+        <h2>Clear out and rebuild</h2>
+        <p>Warning!  This will trash any unsaved progress in either space</p>
+        <form action="/reset" method="post">
+            <input type="text" hidden name="environment" value="prod">
+            <input type="text" hidden name="csrf" value="{{ csrf }}">
+            <input type="text" hidden name="branch" value="master">
+            <button type="submit">Reset Prod</button>
+        </form>
 
-<form action="/reset" method="post">
-    <input type="text" hidden name="environment" value="dev">
-    <input type="text" hidden name="csrf" value="{{ csrf }}">
-    <input type="text" name="branch" value="master">
-    <button type="submit">Reset Dev</button>
-</form>
+        <form action="/reset" method="post">
+            <input type="text" hidden name="environment" value="dev">
+            <input type="text" hidden name="csrf" value="{{ csrf }}">
+            <input type="text" name="branch" value="master">
+            <button type="submit">Reset Dev</button>
+        </form>
 
-<h2>Push Unsaved Changes</h2>
-<form action="/save" method="post">
-    <input type="text" hidden name="csrf" value="{{ csrf }}">
-    <button type="submit">Save and Push Changes</button>
-</form>
-<ul>
-    {% for change in status %}
-        <li><a href="/diff?path={{change.destination or change.target}}">{{ change.description }} {{ change.target }}</a></li>
-    {% endfor %}
-</ul>
+        <h2>Push Unsaved Changes</h2>
+        <form action="/save" method="post">
+            <input type="text" hidden name="csrf" value="{{ csrf }}">
+            <button type="submit">Save and Push Changes</button>
+        </form>
+        <ul>
+            {% for change in status %}
+                <li><a href="/diff?path={{change.destination or change.target}}">{{ change.description }} {{ change.target }}</a></li>
+            {% endfor %}
+        </ul>
 
-<h2>Current Contents</h2>
-<table>
-    <tr>
-        <th>Title</th>
-        <th>Path</th>
-        <th>Is Draft</th>
-        <th>Edit</th>
-        <th>Preview</th>
-        <th>Production</th>
-    </tr>
-    {% for url_path, shortpath, frontmatter in content_files %}
-        <tr>
-            <td>{{ frontmatter['title'] }}</a></td>
-            <td>{{ shortpath }}</a></td>
-            <td>{{ frontmatter['draft'] }}</td>
-            <td><a href="post?path={{ shortpath | urlencode }}">Edit</a></td>
-            <td><a href="https://dev.aggressivelyparaphrasing.me/{{ url_path }}">Preview</a></td>
-            <td><a href="https://aggressivelyparaphrasing.me/{{ url_path }}">Production</a></td>
-        </tr>
-    {% endfor %}
-</table>
+        <h2>Current Contents</h2>
+        <div style="overflow-x: scroll;">
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Path</th>
+                    <th>Is Draft</th>
+                    <th>Edit</th>
+                    <th>Preview</th>
+                    <th>Production</th>
+                </tr>
+                {% for url_path, shortpath, frontmatter in content_files %}
+                    <tr>
+                        <td>{{ frontmatter['title'] }}</a></td>
+                        <td>{{ shortpath }}</a></td>
+                        <td>{{ frontmatter['draft'] }}</td>
+                        <td><a href="post?path={{ shortpath | urlencode }}">Edit</a></td>
+                        <td><a href="https://dev.aggressivelyparaphrasing.me/{{ url_path }}">Preview</a></td>
+                        <td><a href="https://aggressivelyparaphrasing.me/{{ url_path }}">Production</a></td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+</body></html>
