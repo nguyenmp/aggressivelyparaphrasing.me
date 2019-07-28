@@ -8,7 +8,7 @@
             <button type="submit">Stage To Preview</button>
             <input type="text" hidden name="csrf" value="{{ csrf }}">
             <input type="text" hidden name="path" value="{{ shortpath }}">
-            <textarea style="width: 100%; white-space: pre-wrap; flex-grow: 1;" name="content">{{content | escape}}</textarea>
+            <textarea style="width: 100%; white-space: pre-wrap; flex-grow: 1; font-size: 1rem;" name="content">{{content | escape}}</textarea>
         </form>
     </body>
 </html>
