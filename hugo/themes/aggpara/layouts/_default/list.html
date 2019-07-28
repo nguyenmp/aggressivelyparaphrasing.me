@@ -1,10 +1,10 @@
 {{ define "main" }}
   <main>
-      {{ .Content }}
-          <ul class="contents">
-          {{ range .Paginator.Pages }}
-              <a href="{{.Permalink}}"><li>{{.Title}}</li></a>
-          {{ end }}
-          </ul>
+    {{ .Content }}
+    {{ range .Paginator.Pages }}
+    <p>
+      <h3>{{ dateFormat "2006 Jan 02" .Date.UTC }} - <a href="{{.RelPermalink}}">{{.Title}}</a></h3>
+    </p>
+    {{ end }}
   </main>
 {{ end }}
