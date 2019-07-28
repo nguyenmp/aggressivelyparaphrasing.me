@@ -1,6 +1,10 @@
 ---
 title: "Hugo's Trailing Slash"
 date: 2019-07-28T12:17:28Z
+tags:
+- meta
+- web-dev
+- debugging
 ---
 
 I found a weird behavior when setting up my personal website.  Whenever I clicked a link on my website to "/portfolio", it would redirect me to the correct host and path, but on port 8080 instead of port 80.  This post will talk about how I went about investigating it and how I addressed the issue.

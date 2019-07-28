@@ -1,6 +1,9 @@
 ---
 title: "A New Site: Aggressively Paraphrasing Me"
 date: 2019-07-28T10:16:44Z
+tags:
+- web-dev
+- meta
 ---
 
 Over the past few weeks, I've been working on redesigning and reimplementing my personal website.  Today, I want to talk about my thoughts and actions behind this change.
