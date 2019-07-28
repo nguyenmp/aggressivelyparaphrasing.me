@@ -64,7 +64,7 @@ footer {
 
 /* Navigation Links */
 
-nav li {
+#header li {
     display: inline-block;
     font-size: 1rem;
     line-height: 1rem;
@@ -80,8 +80,32 @@ nav li {
     display: inline-block
 }
 
-nav > ul > li + li:before {
+#header ul li + li:before {
     content: " | "
+}
+
+/* Table of Contents */
+
+#TableOfContents {
+    margin: 1rem;
+    padding: 1rem;
+    display: inline-block;
+    border-left: 1rem solid #B99141;
+    background-color: #FBCF76;
+}
+
+#TableOfContents:before {
+    content: "Table of Contents";
+}
+
+#TableOfContents ul, #TableOfContents li {
+    list-style: none;
+    margin: 0rem;
+}
+
+#TableOfContents ul ul {
+    list-style: none;
+    margin-left: 2rem;
 }
 
 /* Lists */

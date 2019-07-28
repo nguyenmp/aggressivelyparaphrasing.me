@@ -7,6 +7,8 @@ Languages: Python, Java
 
 Skills: Android, Web Dev, Automation
 
+{{< break >}}
+
 ## Experience
 
 You can find my details on my [LinkedIn](https://www.linkedin.com/in/nguyenm605/), but in summary:

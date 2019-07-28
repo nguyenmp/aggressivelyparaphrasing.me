@@ -3,9 +3,9 @@ title: "Sample"
 date: 2019-07-06T21:24:05-07:00
 ---
 
-# Sample of Markdown Renders
-
 This page has samples of all the different website components I use so that I can test style changes to the website all on one page.
+
+{{< break >}}
 
 ## Headers
 ### Header 3

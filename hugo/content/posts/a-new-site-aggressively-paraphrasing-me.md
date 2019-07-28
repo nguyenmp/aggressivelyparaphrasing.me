@@ -5,10 +5,12 @@ date: 2019-07-28T10:16:44Z
 
 Over the past few weeks, I've been working on redesigning and reimplementing my personal website.  Today, I want to talk about my thoughts and actions behind this change.
 
+{{< break >}}
+
 ## Motivation
 
 I have been journaling for a bit of time and Google Docs started to fail at around 200 pages.  The page itself was getting slow to load and would sometimes bug out.  It took a long time to jump between different sections of the document.  I had already transitioned to a split "wikis" versus "notes" style but it was difficult to transition between them.  The document itself didn't feel like an archive, even though I wanted it to be one.
-
+### FOoo
 Moreover, my hosting provider decided to shut down and I wanted to spend some time working on my site again.
 
 ## Requirements
