@@ -45,14 +45,14 @@
         <th>Preview</th>
         <th>Production</th>
     </tr>
-    {% for shortpath, frontmatter in content_files %}
+    {% for url_path, shortpath, frontmatter in content_files %}
         <tr>
             <td>{{ frontmatter['title'] }}</a></td>
             <td>{{ shortpath }}</a></td>
             <td>{{ frontmatter['draft'] }}</td>
             <td><a href="post?path={{ shortpath | urlencode }}">Edit</a></td>
-            <td>Preview</td>
-            <td>Production</td>
+            <td><a href="https://dev.aggressivelyparaphrasing.me/{{ url_path }}">Preview</a></td>
+            <td><a href="https://aggressivelyparaphrasing.me/{{ url_path }}">Production</a></td>
         </tr>
     {% endfor %}
 </table>

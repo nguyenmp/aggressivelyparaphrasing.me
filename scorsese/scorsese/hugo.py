@@ -61,4 +61,17 @@ def get_content_files(hugo_path):
                 full_path = os.path.join(dirpath, filename)
                 _content, frontmatter = get_content_file(full_path)
                 short_path = full_path[len(contents_dir):]  # Make path relative to hugo/content/
-                yield (short_path, frontmatter)
+                url_path = get_url_path(short_path)
+                yield (url_path, short_path, frontmatter)
+
+
+def get_url_path(short_path):
+    '''
+    Given the path under the "content" folder of hugo, return the expected URL path.
+
+    For example:
+    _index.md => /
+    posts/oreo-paper.md => posts/oreo-paper
+    sample.md => sample
+    '''
+    return re.sub('(_index\.md|\.md)', '', short_path)
