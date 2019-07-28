@@ -1,7 +1,6 @@
 ---
 title: "Sample"
 date: 2019-07-06T21:24:05-07:00
-draft: false
 ---
 
 # Sample of Markdown Renders
