@@ -1,7 +1,6 @@
 ---
 title: "Portfolio"
 date: 2019-07-17T00:20:06-07:00
-draft: true
 ---
 
 Languages: Python, Java
