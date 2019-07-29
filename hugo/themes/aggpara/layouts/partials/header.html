@@ -1,23 +1,20 @@
 <header id="header">
-    <span class="nav-title">Aggressively Paraphrasing Me</span>
+    <span class="nav-title"><a href="/">Aggressively Paraphrasing Me</a></span>
     <nav>
         <div class="nav-row">
-            <span class="nav-heading">Wikis:</span>
+            <span class="nav-heading">Sections: </span>
             <ul class="nav-fill">
-                <li><a href="/">Home</a></li>
                 <li><a href="/portfolio/">Portfolio</a></li>
                 <li><a href="/posts/">Blog</a></li>
             </ul>
         </div>
 
         <div class="nav-row">
-            <span class="nav-heading">Notes:</span>
+            <span class="nav-heading">Topics: </span>
             <ul class="nav-fill">
-                <li><a href="">Anime</a></li>
-                <li><a href="">Music</a></li>
-                <li><a href="">Coding</a></li>
-                <li><a href="">Drawing</a></li>
-                <li><a href="">Languages</a></li>
+                {{ range .Site.Taxonomies.tags.ByCount }}
+                <li><a href="{{.Page.RelPermalink}}">{{.Page.Title}} ({{len .Page.Pages}})</a></li>
+                {{ end }}
             </ul>
         </div>
     </nav>

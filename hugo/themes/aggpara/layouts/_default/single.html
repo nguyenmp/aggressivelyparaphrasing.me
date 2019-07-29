@@ -2,5 +2,7 @@
   <main>
       <h1>{{ .Title }}</h1>
       {{ .Content }}
+
+      <p>Tags: {{range .Params.tags}} <a href="/tags/{{.}}/">{{.}}</a> {{ end}}</p>
   </main>
 {{ end }}

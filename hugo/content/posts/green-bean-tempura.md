@@ -2,6 +2,8 @@
 title: "Green Bean Tempura"
 date: 2019-07-22T21:58:50-07:00
 draft: true
+tags:
+- japanese
 ---
 
 I think about food a lot, to the point where I often read Wikipedia about various food topics.  Although it helps with trivia, I think the personal motivating factor is just curiosity.

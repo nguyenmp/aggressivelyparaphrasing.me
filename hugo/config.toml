@@ -2,3 +2,6 @@ baseURL = "https://aggressivelyparaphrasing.me/"
 languageCode = "en-us"
 title = "Aggressively Paraphrasing Me"
 theme = "aggpara"
+
+[taxonomies]
+  tag = "tags"

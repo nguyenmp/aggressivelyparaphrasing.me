@@ -2,6 +2,10 @@
 title: "Taxonomy Terms in Hugo"
 date: 2019-07-29T06:43:12Z
 draft: true
+tags:
+- meta
+- hugo
+- debugging
 ---
 
 I've been trying to get "tags" working in my Hugo based "aggressivelyparaphrasing.me" website for a day now and it's a nightmare.  I'm going to talk about how things don't behave as expected and how I dealt with them.

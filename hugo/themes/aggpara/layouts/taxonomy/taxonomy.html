@@ -1,7 +1,7 @@
 {{ define "main" }}
   <main>
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
+    <h1><a href="/tags/">Tags</a>: {{ .Title }}</h1>
+    {{.Description}}
     {{ range .Paginator.Pages }}
     <p>
       <h3>{{ dateFormat "2006 Jan 02" .Date.UTC }} - <a href="{{.RelPermalink}}">{{.Title}}</a></h3>
