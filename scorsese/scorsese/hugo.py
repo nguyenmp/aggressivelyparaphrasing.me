@@ -16,6 +16,7 @@ def build(hugo_path, with_drafts=False):
         'hugo',
         '--source', hugo_path,
         '--buildDrafts='+str(with_drafts),
+        '--enableGitInfo',
     ])
 
 
