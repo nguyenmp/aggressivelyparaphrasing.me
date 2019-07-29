@@ -110,7 +110,8 @@ def get():
 @app.route('/post', methods=["POST"])
 @check_csrf
 def edit():
-    path = request.form['path']
+    old_path = request.form['old_path']
+    new_path = request.form['new_path']
     content = request.form['content']
 
     # Note, we set newline here because HTML5 spec specifies to return form
@@ -119,7 +120,8 @@ def edit():
     # always write with \n.
     content = re.sub('\r\n', '\n', content)
 
-    with io.open(os.path.join(PREVIEW_HUGO_PATH, 'content', path), 'w', newline='\n') as handle:
+    os.remove(os.path.join(PREVIEW_HUGO_PATH, 'content', old_path))
+    with io.open(os.path.join(PREVIEW_HUGO_PATH, 'content', new_path), 'w', newline='\n') as handle:
         handle.write(content)
 
     # Remember to rebuild, or else it won't show up in the preview
