@@ -410,4 +410,4 @@ How to run and test at desk:
 
 ## Only hugo
 
-1. Run `hugo -D --source hugo/` to build with drafts
+1. Run `rm -rf public/ && hugo -D --enableGitInfo --noHTTPCache --path-warnings --renderToDisk --watch=false --disableLiveReload --disableFastRender server` to build with drafts

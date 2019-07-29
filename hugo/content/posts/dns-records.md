@@ -2,6 +2,8 @@
 title: "DNS Records"
 date: 2019-07-22T16:22:08-07:00
 draft: true
+tags:
+- meta
 ---
 
 In setting up aggressivelyparaphrasing.me, I really struggled with how to manage domains.

@@ -19,20 +19,20 @@ def build(hugo_path, with_drafts=False):
     ])
 
 
-def new(hugo_path, genre, name):
+def new(hugo_path, name):
     '''
-    Creates a new item in the given archetype.  For example: (genre=posts,
-    name=first-post) will run "hugo new posts/first-post.md".
+    Creates a new item in the given archetype.  For example,
+    (name=posts/first-post) will run "hugo new posts/first-post.md".
     '''
     # Clean input
     assert not name.endswith('.md')
-    assert re.match('^[a-zA-Z-]+$', name)
+    assert re.match('^[_a-zA-Z-][_/a-zA-Z-]+$', name)  # Must not start with slash
 
-    content_path = os.path.join(genre, name + '.md')
+    name = name + '.md'
     subprocess.check_call([
         'hugo',
         '--source', hugo_path,
-        'new', content_path,
+        'new', name,
     ])
 
 

@@ -1,3 +1,7 @@
 <footer>
-        Built on {{ now.Format "January _2, 2006"}} @ {{ now.Local.Format "15:04:05"}}.
+    Originally posted on {{ dateFormat "2006 Jan 02 15:04 MST" .Date.UTC }}.
+    <br>
+    Last modified on {{ dateFormat "2006 Jan 02 15:04 MST" .Lastmod.UTC }}.
+    <br>
+    Compiled on {{ dateFormat "2006 Jan 02 15:04 MST" now.UTC }}.
 </footer>

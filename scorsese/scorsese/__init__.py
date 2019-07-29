@@ -138,7 +138,7 @@ def diff():
 @check_csrf
 def create():
     name = request.form['file_name']
-    hugo.new(PREVIEW_HUGO_PATH, 'posts', name)
+    hugo.new(PREVIEW_HUGO_PATH, name)
     hugo.build(PREVIEW_HUGO_PATH, with_drafts=True)
     return redirect(url_for('index'))
 

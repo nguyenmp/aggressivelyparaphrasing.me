@@ -28,31 +28,23 @@ h1, h2, h3, h4, h5, h6, p {
 h1 {
     font-size: 2rem;
     line-height: 2rem;
+    text-decoration: underline;
 }
 
 h2 {
-    font-size: 1.8rem;
-    line-height: 1.8rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
 }
 
 h3 {
-    font-size: 1.6rem;
-    line-height: 1.6rem;
-}
-
-h4 {
-    font-size: 1.4rem;
-    line-height: 1.4rem;
-}
-
-h5 {
-    font-size: 1.2rem;
-    line-height: 1.2rem;
-}
-
-h6 {
     font-size: 1rem;
     line-height: 1rem;
+}
+
+h4, h5, h6 {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    text-decoration: underline overline line-through;
 }
 
 header > .nav-title {
@@ -72,7 +64,7 @@ footer {
 
 /* Navigation Links */
 
-nav li {
+#header li {
     display: inline-block;
     font-size: 1rem;
     line-height: 1rem;
@@ -88,8 +80,32 @@ nav li {
     display: inline-block
 }
 
-nav > ul > li + li:before {
+#header ul li + li:before {
     content: " | "
+}
+
+/* Table of Contents */
+
+#TableOfContents {
+    margin: 1rem;
+    padding: 1rem;
+    display: inline-block;
+    border-left: 1rem solid #B99141;
+    background-color: #FBCF76;
+}
+
+#TableOfContents:before {
+    content: "Table of Contents";
+}
+
+#TableOfContents ul, #TableOfContents li {
+    list-style: none;
+    margin: 0rem;
+}
+
+#TableOfContents ul ul {
+    list-style: none;
+    margin-left: 2rem;
 }
 
 /* Lists */

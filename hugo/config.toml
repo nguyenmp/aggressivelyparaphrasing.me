@@ -1,4 +1,7 @@
-baseURL = "http://example.org/"
+baseURL = "https://aggressivelyparaphrasing.me/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Aggressively Paraphrasing Me"
 theme = "aggpara"
+
+[taxonomies]
+  tag = "tags"

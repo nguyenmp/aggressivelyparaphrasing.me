@@ -3,9 +3,9 @@ title: "Sumika"
 date: 2019-07-18T00:19:11-07:00
 draft: true
 tags:
-- Anime
-- Music
-- Japanese
+- anime
+- music
+- japanese
 ---
 
 Today I wanted to talk about some fun adventures around homonyms in Japanese.  My friend invited me to a restaurant called Sumika.  While searching up this restaurant, I noticed that there was a Japanese band also called Sumika.
