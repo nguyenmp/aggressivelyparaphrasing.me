@@ -22,6 +22,7 @@ from . import git, hugo
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = base64.b64decode(os.environ['SECRET_KEY'])
+app.config['PROPAGATE_EXCEPTIONS'] = True
 
 CONTAINER = '/home/private'
 PREVIEW_DIR_NAME = 'dev'
