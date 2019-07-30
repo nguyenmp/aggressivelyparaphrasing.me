@@ -6,6 +6,7 @@ import os
 import re
 import subprocess
 
+import yaml
 import frontmatter as parser
 
 def build(hugo_path, with_drafts=False):
@@ -44,7 +45,11 @@ def get_content_file(path):
     with open(path, 'r') as handle:
         content = handle.read()
 
-    frontmatter = parser.loads(content)
+    frontmatter = None
+    try:
+        frontmatter = parser.loads(content)
+    except yaml.parser.ParserError as e:
+        print(e)
     return (content, frontmatter)
 
 
