@@ -4,6 +4,7 @@ date: 2019-07-28T07:48:44Z
 draft: true
 tags:
 - rust
+- debugging
 ---
 
 A few months ago, I wrote a tarball decompressor in Rust.  I needed a tarball decompressor implementation because of some work I was doing, but I decided to have a lot of fun with this.  The actual work was a three line change but this project was incredibly fun.  I decided to try and implement a decompressor entirely out of the specifications for the algorithms, using a language I had never used before called rust.
