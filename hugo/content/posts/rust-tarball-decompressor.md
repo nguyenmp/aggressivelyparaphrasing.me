@@ -26,7 +26,7 @@ This tool also didn’t output, much like infgen, but I quickly found some locat
 
 ## The Bug
 
-After all the debugging and hair pulling, I finally found that I was doing a double-write when we encounter an end block in DEFLATE.
+After all the debugging and hair pulling, I finally found that I was doing a double-write when we encounter an end block in DEFLATE.  You can find my fork with it’s debugging changes.
 
 ## The Result
 
