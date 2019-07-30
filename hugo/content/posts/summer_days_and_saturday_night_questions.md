@@ -1,6 +1,6 @@
 ---
 title: "Summer Days and Saturday Night Questions"
-date: 2019-07-30T01:05:04-07:00
+date: 2019-07-30T00:05:04-07:00
 tags:
 - anime
 - music
