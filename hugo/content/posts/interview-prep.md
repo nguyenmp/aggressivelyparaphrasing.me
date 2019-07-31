@@ -11,15 +11,53 @@ I decided to start looking for a job and decided to document my process.  Part o
 
 These are short but valuable write ups about interviewing in tech.
 
-https://m.stopa.io/10-offers-100-days-the-journey-16a0407b8d95
-I think I need to focus on training people.  For a long time, I focused my resume on projects and technical success, not on people and process.
+### 10 Offers, 100 Days. The Journey by Stepan Parunashvili
 
-I think overall, I like how they break down senior engineer interviews, but the actual actionable data is pretty lacking.  How doesn’t one improve on systems questions and experience interviews?  The only real suggestion is read Elements or Programming Interview.
+The [blog post](https://m.stopa.io/10-offers-100-days-the-journey-16a0407b8d95) goes over this individual’s adventure of being highly successful at winning offers at some pretty competitive companies,
+
+There are a few high level points that are pretty valuable:
+
+* Communication with your support group is pretty interesting, some have been pursuing my goals for longer than I have
+* At some point, the interview is less focused on algorithms and more on high level systems and project design and soft skills.  Higher level positions are about leading people and projects.  Often, questions about failures, conflicts, failures, deadlines, and weaknesses are to point out and expose experiences dealing with these types of responsibilities.
+* Leadership usually entails bringing people up to speed, so it might be worth emphasizing on my resume.  Previously, it was mostly technical focus and project focus, rather than people focused.
+* They recommend reading Elements of Programming Interview
+* I should formalize my reasons for searching for a new job.  A strong, positive motivation can help establish “strong-fits” for people to recommend you to, and make you more desirable for those companies.
+* It may be valuable to “figure out my level” and also to figure out the compensation ranges for that level, using [levels.fyi](https://levels.fyi)
+* There is a structure to system design questions.  This is repeated in a lot of other blogs.
+
+Below are some quotes I pulled out for reference and to reflect upon.
+
+> Sit down and reflect: What got you here? What did you love about your last job? What would the most amazing opportunity look like?
+
+ I need to do this.
+
+> A week or so after you’re into the book, schedule practice interviews. My favorites are https://interviewing.io and https://pramp.com.
+
+Might be worth trying since they can do system design interviews.
+
+> For System Design, I also suggest three steps. First, master the structure — scope down, go broad, outline a complete solution, go deep on as many components as you can, then go the extra mile, to share how you would actually launch the system. The “System Design” module in the course does a great job of going deep on this. Next, as you go through the practice interviews, you’ll start to notice places where you can improve. Start noting those down and build a plan to learn. For example, if you don’t know how to scale, you can search “{Company Name} InfoQ” and find some awesome talks. If you’re unsure about concurrency, the book 7 concurrency models in 7 weeks can ramp you up. Don’t know much about databases? 7 databases in 7 weeks.
+
+I fear the system design section.  I don’t have much practice in this compared to LeetCode for algorithms and data structures.
+
+> The purpose of the Experience Interview is to understand your scope — the kinds of problems you can solve — and whether you are a culture fit. This interview type largely takes care of itself if you’ve centered on your narrative (you know what you want and where you’re going), and your communication (you know what level you are). The first coneys your culture fit, and the second your scope. You can go deeper on this in the “Experience Interview” module in the course.
+
+I also don’t have much practice answering questions involving soft skills and experience.  I need to figure out these solutions.
+
+> Communicate your level and your narrative. Keep signal and scope top of mind, and communicate clearly during every phase — recruiter screens, technical screens, and and onsites. We go deeper on this in the “Interview Phases” module of the course.
+
+I actually think I don’t do this at all right now.  Part of it was I’ve never really know what I want to do because I’m so open to many options and I like just exploring and trying new things.  When people ask me to tell them what I want, I find it incredibly difficult to express.  However, I also do a pretty bad job expressing what I currently do already.
+
+I think overall, I like how they break down senior engineer interviews, but the actual actionable data is pretty lacking for the two sections I care about the most.  How does one improve on systems questions and experience interviews?  The only real suggestion is read Elements or Programming Interviews, which I’ve seen recommended a lot over the years, but that’s focused on algorithms and data structures.  It does suggest that the real content is in [jobsearch.dev](https://jobsearch.dev/) which is free so maybe I’ll try it.
+
+### Software Engineering Paths
 
 https://medium.com/@anthony_sarkis/software-engineering-paths-180595fd229c
 Skills aren’t binary.  This article suggests they’re trinary.
 
-https://blog.usejournal.com/how-i-negotiated-a-software-engineer-offer-in-silicon-valley-f11590f5c656
+### How I negotiated a $300,000 job offer in Silicon Valley
+
+[This blog post](https://blog.usejournal.com/how-i-negotiated-a-software-engineer-offer-in-silicon-valley-f11590f5c656) is actually a sequel to one titled [“I interviewed at six top companies in Silicon Valley in six days, and stumbled into six job offers”](https://blog.usejournal.com/i-interviewed-at-six-top-companies-in-silicon-valley-in-six-days-and-stumbled-into-six-job-offers-fe9cc7bbc996).
+
 Big take away is multiple offers is best, and a good alternative is to be employed.
 
 ### Peak
@@ -109,6 +147,28 @@ My biggest take-aways are:
 > 
 > - https://m.stopa.io/10-offers-100-days-the-journey-16a0407b8d95
 
+## Practicing
+
+There should have been practicing this whole time during preparation, but there’s something special about going through a series of full end-to-end interviews.  Specifically, having another person question you and give you feedback.  Thus, this section is dedicated towards getting real feedback.
+
+### https://interviewing.io/
+
+### https://pramp.com/
+
+### jobsearch.dev
+
+Should probably go under primer or something...
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -116,4 +176,3 @@ My biggest take-aways are:
 
 
  
-
