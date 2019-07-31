@@ -61,6 +61,8 @@ Overall, this is more of a fun read than a serious one for my particular goals h
 
 [This book](https://en.m.wikipedia.org/wiki/Peak:_Secrets_from_the_New_Science_of_Expertise) talks about how the best way to improve is to just do things for a very long amount of time, but also that the doing must be deliberate practice, it must be work just outside your comfort zone.  Otherwise, you just stagnate at your level.  I haven’t read it yet but I’ve read and heard a lot about it.
 
+[There’s an excerpt on Salon](https://www.salon.com/2016/04/10/malcolm_gladwell_got_us_wrong_our_research_was_key_to_the_10000_hour_rule_but_heres_what_got_oversimplified/) that’s probably good enough as a primer.  I also haven’t read this yet.
+
 When I think of those ideas of deliberate practice, I think about the following sections, that I’ve practiced algorithms significantly over the last five to six years, but have very little practice and experience around system design questions and experience questions.  It’s also clear those are required to getting to the next level.  As such, I’ll spend most of my time on the latter, since that’s where I need the most growth.
 
 ## Algorithms
