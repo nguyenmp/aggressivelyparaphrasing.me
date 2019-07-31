@@ -84,6 +84,12 @@ footer {
     content: " | "
 }
 
+/* Lists */
+
+main ul, ol {
+    margin-left: 2rem;
+}
+
 /* Table of Contents */
 
 #TableOfContents {
@@ -105,12 +111,6 @@ footer {
 
 #TableOfContents ul ul {
     list-style: outside;
-    margin-left: 2rem;
-}
-
-/* Lists */
-
-main ul, ol {
     margin-left: 2rem;
 }
 
