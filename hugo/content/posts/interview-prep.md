@@ -49,10 +49,13 @@ I actually think I don’t do this at all right now.  Part of it was I’ve neve
 
 I think overall, I like how they break down senior engineer interviews, but the actual actionable data is pretty lacking for the two sections I care about the most.  How does one improve on systems questions and experience interviews?  The only real suggestion is read Elements or Programming Interviews, which I’ve seen recommended a lot over the years, but that’s focused on algorithms and data structures.  It does suggest that the real content is in [jobsearch.dev](https://jobsearch.dev/) which is free so maybe I’ll try it.
 
-### Software Engineering Paths
+### Software Engineering Paths by Anthony Sarkis
 
-https://medium.com/@anthony_sarkis/software-engineering-paths-180595fd229c
-Skills aren’t binary.  This article suggests they’re trinary.
+[This blog post](https://medium.com/@anthony_sarkis/software-engineering-paths-180595fd229c) is mostly speculation about how people perceive experience and job requirements.  It suggests skills aren’t a binary yes or no, nor are they really a spectrum of endless non-discrete markers.  This article suggests they’re trinary.  That you’re either lightly experienced, moderately experienced, or an expert.  Moreover, these levels are skill and topic dependent, you are not just an expert, you are an expert in some topic or field.
+
+The article is less about how to succeed in the interview, and more helpful for understanding how the interview process is seen by some people behind the table.  It’s also helpful for reflecting on my own expertise and skills.  I hunk categorizing ones skills this way is super helpful in knowing expertise.
+
+Overall, this is more of a fun read than a serious one for my particular goals here.
 
 ### How I negotiated a $300,000 job offer in Silicon Valley
 
