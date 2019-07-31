@@ -104,6 +104,10 @@ main ul, ol {
     content: "Table of Contents";
 }
 
+#TableOfContents > ul {
+    margin-left: 0rem;  /* This overrides the property from main ul */
+}
+
 #TableOfContents > ul > li {
     list-style: none;
     margin: 0rem;
