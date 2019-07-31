@@ -57,15 +57,9 @@ The article is less about how to succeed in the interview, and more helpful for 
 
 Overall, this is more of a fun read than a serious one for my particular goals here.
 
-### How I negotiated a $300,000 job offer in Silicon Valley
+### Peak: Secrets from the New Science of Expertise
 
-[This blog post](https://blog.usejournal.com/how-i-negotiated-a-software-engineer-offer-in-silicon-valley-f11590f5c656) is actually a sequel to one titled [“I interviewed at six top companies in Silicon Valley in six days, and stumbled into six job offers”](https://blog.usejournal.com/i-interviewed-at-six-top-companies-in-silicon-valley-in-six-days-and-stumbled-into-six-job-offers-fe9cc7bbc996).
-
-Big take away is multiple offers is best, and a good alternative is to be employed.
-
-### Peak
-
-Talks about how the best way to improve is to just do things for a very long amount of time, but also that the doing must be deliberate practice, it must be work just outside your comfort zone.  Otherwise, you just stagnate at your level.
+[This book](https://en.m.wikipedia.org/wiki/Peak:_Secrets_from_the_New_Science_of_Expertise) talks about how the best way to improve is to just do things for a very long amount of time, but also that the doing must be deliberate practice, it must be work just outside your comfort zone.  Otherwise, you just stagnate at your level.  I haven’t read it yet but I’ve read and heard a lot about it.
 
 When I think of those ideas of deliberate practice, I think about the following sections, that I’ve practiced algorithms significantly over the last five to six years, but have very little practice and experience around system design questions and experience questions.  It’s also clear those are required to getting to the next level.  As such, I’ll spend most of my time on the latter, since that’s where I need the most growth.
 
@@ -140,15 +134,61 @@ My biggest take-aways are:
 
 ## Negotiation
 
+### How I negotiated a $300,000 job offer in Silicon Valley
 
+[This blog post](https://blog.usejournal.com/how-i-negotiated-a-software-engineer-offer-in-silicon-valley-f11590f5c656) is actually a sequel to one titled [“I interviewed at six top companies in Silicon Valley in six days, and stumbled into six job offers”](https://blog.usejournal.com/i-interviewed-at-six-top-companies-in-silicon-valley-in-six-days-and-stumbled-into-six-job-offers-fe9cc7bbc996).
+
+Big take away is multiple offers is best, and a good alternative is to be employed.
+
+> **Recruiter**: So, what do you think?
+>
+> **You**: That’s an interesting offer. I think it’s probably in the ballpark, but it’s not something I’m going to sign right now. I’m going to wait until I hear back from the other places I’m speaking to.
+>
+> In the above, you let your recruiter know that they’re “in the running”, but that it’s not enough to blow you away. You’re respectful but firm. This is the blueprint for how your discussions should go.
+
+This helps address the initial offer.
+
+> My initial counter-offers sounded something like this (I made up the numbers here and provide a few examples):
+
+> **Bar, Inc.**: We were thinking of offering a base salary of around $120,000 with a four-year RSU package of $150,000 and a signing bonus of $10,000. What do you think of that?
+
+> **Me**: How flexible is Bar, Inc. on equity? I’m really looking to stay and grow at a company, and equity is something I really interested in wherever I go. I’m comfortable with something in the neighborhood of $120,000 on base, but I’d definitely like to sign an offer with a larger equity package.
+
+> **FooCorp**: We were thinking of offering a base salary of around $100,000 with a four-year RSU package of $150,000 and a signing bonus of $10,000. What do you think of that?
+
+> **Me**: I think the base is a little bit lower than what I’d like based on my offer from Bar, Inc. for $120,000, and base salary is really important to me. As for the equity package, I was looking for something closer to $200,000. The signing bonus is around what I was looking for.
+
+> There’s a lot of actionable information above for a recruiter without you giving any implicit commitment to any number. FooCorp knows they need to get to $120,000 to meet your other offer. Bar knows that equity is important to you, and equity is something that companies tend to move a lot more willingly. You now have two companies moving in tandem to get a better offer to you and neither of them is talking to each other. This is pretty much how you want this entire process to go.
+
+This helps address the initial counter offers.
+
+> It makes sense to change an established range once another company ups the ante. This is how that discussion went for me:
+
+> **Me**: Hey, I finally heard back from Baz LLC. Their offer came in a lot higher than I was expecting. They offered $150,000 in base, $200,000 in stock, and $40,000 in signing. That being said I think the work FooCorp aligns more closely with my interests, so I’d really like to make something work with you guys. Can we do what we can to get to those numbers? I’d love to figure this out.
+
+> **FooCorp**: Wow, that’s a good offer. Keep in mind FooCorp is {making the world a better place / has amazing potential / is better for your career} and I would hope you wouldn’t be deciding based on a paycheck. I don’t know if we can match that offer exactly, but I’ll see what we can do.
+
+> I went through the above sample conversations so many times and they all went pretty similarly.  They always sounded very doubtful about moving their numbers. They always said it was more than they would typically give up.  They always explained why their company’s mission and culture made up for the difference in comp.  But almost always, they upped the package.  Sometimes they’ll match it. Sometimes they won’t. Sometimes they’ll come close enough that you’ll pull the trigger because it’s such an exciting opportunity. You should always give it a shot, though.
+
+This helps address the final standing offer, like a “last-call” in terms of what people can offer.
+
+Honestly, the blog post is full of examples so it’s worth reading just to appreciate and dissect.  These types of skills I personally feel I lack.
+
+### I interviewed at six top companies in Silicon Valley in six days, and stumbled into six job offers
+
+[This post](https://blog.usejournal.com/i-interviewed-at-six-top-companies-in-silicon-valley-in-six-days-and-stumbled-into-six-job-offers-fe9cc7bbc996) is the original to the above $300k post.  I placed it after because I personally am looking at a higher level position rather than just getting a bunch of offers at big companies since I’m already there.  However, I left it here because I think it’s worth reading.
+
+### Salary Negotiation: Make More Money, Be More Valued by Patrick McKenzie (patio11)
+
+[This long blog post](https://www.kalzumeus.com/2012/01/23/salary-negotiation/) was one I read a long time about and frames the company side of negotiating differently than cost minimization and value maximization.  Honestly, it’s a really fresh perspective for me and I think it’s an often lightly described idea in other pieces.  It’s one of the few pieces that talks about what the other side wants, and how to work with that.  This was recommended from the $300k post as well as the 10 offers in 3 months post.  I read this long before either of those and can say it’s worth the read.  For this goal, I will reread and reanalyze.
+
+### The Business by Rands
+
+I’ve never read [this piece](http://randsinrepose.com/archives/the-business/) but it was recommended by the 10 offers author in that piece.
 
 ### Getting to Yes
 
 ### Never Split the Difference
-
-> Patio11’s [Salary Negotiation](https://www.kalzumeus.com/2012/01/23/salary-negotiation/) and Rands’ [The Business](http://randsinrepose.com/archives/the-business/) are great reading too.
-> 
-> - https://m.stopa.io/10-offers-100-days-the-journey-16a0407b8d95
 
 ## Practicing
 
