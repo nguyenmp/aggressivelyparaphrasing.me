@@ -79,7 +79,15 @@ I read this once in college before landing my first job.  I think it’s an okay
 
 ### Elements of Programming Interview
 
-This book is often recommended but I’ve never read it.
+This book is often recommended but I’ve never read it.  There seems to be a few, one for Java, one in Python, and one written generically.  I’d go generic.
+
+### Programming Interviews Exposed
+
+Another recommended book.  It looks like a much older book, originally published in 2000.  However, [the fourth edition](https://www.amazon.com/dp/111941847X/) just came out last year in April 2018 so I would start there.
+
+### The Algorithm Design Manual
+
+I’ve also see this recommended but it seems way too much at 750 pages.
 
 ## System Design
 
@@ -113,6 +121,10 @@ https://hackernoon.com/anatomy-of-a-system-design-interview-4cb57d75a53f
 
 They have yet another breakdown, but also more study material to go through.
 
+### Designing Data Intensive Applications
+
+I’ve seen this recommended a few times, might be worth the read.
+
 ## Experience, Leadership, Soft Skills
 
 I kind of group up all the soft skills and leadership skills together under “experience”.  I think project management can also fit under here.  Part of the reason is because, in an interview, all of these requirements are checked off together.  People ask about your history leading projects, dealing with conflict, missing deadlines, all to probe at these non-technical skills.  I felt like I was lacking here so I decided to read A LOT about it.  It’s also rather fortunate that there’s a significant amount written on these topics.
@@ -122,6 +134,7 @@ I kind of group up all the soft skills and leadership skills together under “e
 ### The Mythical Man-Month
 ### Soft Skills: The Software Developers Life Manual
 ### Peopleware: Productive Projects and Teams
+### Start with Why: How Great Leaders Inspire Everyone to Take Action
 ### The Manager’s Path: A Guide for Tech Leaders Navigating Growth and Change
 
 I originally got this tech management book half a year before I started my job search.  I felt my ability to connect and communicate with my leadership had gotten rusty and I wanted to learn what it was like from their point of view.
