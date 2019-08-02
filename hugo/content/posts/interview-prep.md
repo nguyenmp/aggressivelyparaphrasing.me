@@ -120,6 +120,14 @@ Once you have the basic premise solidified, cycle between:
 
 Additionally, there is a lot of content on that page near the end.  I’ll be looking at them independently.
 
+### The Complete System Design Interviewer Guide
+
+[This blog post](https://blog.pramp.com/the-complete-system-design-interviewer-guide-e5d273724db8) was found at the bottom of “How to Succeed in a System Design Interview” by the same author.  I think it is interesting because it’s looking at the interview from the other side of the table, as an interviewer.
+
+> Remember that the worst outcome from an interview is to decide that the person needs an additional interview before a decision can be made
+
+Wow.  This is a thought that I’ve never really considered much before.  I’ve interviewed before and have left the room a few times feeling uncertain of either decision to pass on the candidate, or push forward.  I’m internalizing this idea that it’s the worst outcome possible and I’m wondering how much of a hyperbole and exaggeration it is.
+
 ### Grokking the System Design Interview
 
 [Link](https://www.educative.io/collection/5668639101419520/5649050225344512)
@@ -142,7 +150,7 @@ They have yet another breakdown, but also more study material to go through.
 
 ### Designing Data Intensive Applications
 
-I’ve seen this recommended a few times, might be worth the read.
+I’ve seen this recommended a few times, might be worth the read.  Most recently, I randomly saw it on Amazon while looking at other books to read.
 
 ## Experience, Leadership, Soft Skills
 
