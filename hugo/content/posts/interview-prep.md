@@ -93,13 +93,32 @@ I’ve also see this recommended but it seems way too much at 750 pages.
 
 This is kind of the “next level” technical interview question.  Im rather disappointed by the lack of prep material available in this space, mostly because actual experience for these things can be hard to come by.  In particular, I don’t work on high scale systems very much, though I do understand them and manage a few low scale systems myself.  Because of this, I feel like I need to learn significantly more.
 
-### Pramp
+### How to Succeed in a System Design Interview by Pramp
 
-https://blog.pramp.com/how-to-succeed-in-a-system-design-interview-27b35de0df26
+[This blog post](https://blog.pramp.com/how-to-succeed-in-a-system-design-interview-27b35de0df26) by Practice Makes Perfect (Pramp) has a helpful step by step guide to approach system design questions.
 
-The page itself has a helpful step by step guide to approach system design questions.
+1. Define the end-user goals
+    * Who are the customers?
+    * What are the requirements and use-cases?
+    * What are the inputs and outputs (interface)?
+2. Negotiate what scope to discuss things at
+    * Do we want to discuss the end-to-end experience or just the API?
+    * What clients do we want to support (mobile, web, etc)?
+    * Do we require authentication? Analytics? Integrating with existing systems?
+3. Define the scale of the problem
+    * What is the expected read-to-write ratio?
+    * How many concurrent requests should we expect?
+    * What’s the average expected response time?
+    * What’s the limit of the data we allow users to provide?
+    * Are the users co-located or distributed around the world?
 
-Additionally, there is a lot of content on that page near the end.
+Once you have the basic premise solidified, cycle between:
+
+* Defining the next highest level of the system
+* Applying appropriate DS&A to solve performance problems
+* Defining trade-offs that could be made for further optimization
+
+Additionally, there is a lot of content on that page near the end.  I’ll be looking at them independently.
 
 ### Grokking the System Design Interview
 
