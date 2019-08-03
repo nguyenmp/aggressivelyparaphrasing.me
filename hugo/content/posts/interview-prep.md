@@ -115,6 +115,10 @@ There were a few things I wanted to highlight that isn’t part of the other mat
 * **“Have multiple solid reasons for why you're looking for a new job, because you'll get asked this a lot.”**  It’s not clear from my current text but I have a Google Doc detailing my personal reflections on my process, mostly containing all the personal information surrounding my motivations.  It’s good to have one that’s is for yourself, but also one to tell your employers.  Not every reason needs to be said, but I definitely have reasons to say during the interview.
 * **“Have good stories about things you worked on. Biggest challenges, how you resolved disagreements, things you would have done differently, etc.”**  This is yet another topic I write thoroughly about in my private Google Doc.  It contains a list of prompts and some thoughts on things I could answer with.  I think it’s a really good idea to reflect on projects I’ve worked on and how it draws upon the non-technical issues that occur in the workplace: conflict, scheduling, negotiation, miscommunication, setbacks, deadlines, misinterpretations.
 
+[Amazon has a blog post](https://blog.aboutamazon.com/working-at-amazon/whats-it-like-to-interview-at-amazon) detailing their interview process.
+
+There’s a clear focus on leadership and their company principles, which seem applicable elsewhere.  I should read these and study them.
+
 ## Algorithms
 
 For the most part, I feel like I have the basics down and there’s established systems of studying for this type of interview.  In particular, I feel like this category is much like the SAT, where you can learn how to answer these types of questions, rather than any particular innate talent.  Moreover, like the SAT, practice really does significantly improve performance.
