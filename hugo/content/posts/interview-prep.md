@@ -7,9 +7,45 @@ draft: true
 I decided to start looking for a job and decided to document my process.  Part of the motivation is to organize my own work.  Another is to help critically think about the process and decisions through writing.
 
 {{< break >}}
+
+## Untitled Introductory Section
+
+When I started writing this document, it mostly focused on the materials to read for the various topics I find important: algorithms and data structures, system design, leadership skills, and negotiation.  However, there are some additional actions I took outside of these that are focused on enabling myself to study well and be prepared.
+
+### Interview Prospectus Document
+
+I have a document that answers a lot of questions people will ask me, outside of the technical portion of the interview.  These are usually to gauge culture-fit and soft-skills.  There isn’t really a way to “grind” these questions other than to just answer them yourself.
+
+I list my motivations to interview.  I expect interviewers to ask me this question, at least once per company, maybe more.  I created a document to help me organize my thoughts around questions like:
+
+* **Why are you looking for a job?  Why did you leave the last place?**  I dislike these questions but I understand why it’s asked from the interviewer’s point of view.  I do think it’s a good idea to reflect on these questions for my own personal wellbeing.
+* **Why are you applying here?  What are you looking for?**  I also dislike this question, but I think I misunderstood their purpose.  Before, I used to think that places thought they were special.  I really do see value in answering this question for a couple of reasons: (1) it’s an opportunity to communicate what you value from a prospective employer, (2) it’s an opportunity to solidify the details that you care about for yourself, and (3) realistically, at this level, it’s a two-way street—I am picking my employer as much as they are picking me—and not thinking about this is a sign I am still looking for any job instead of critically thinking about my career.  Whether or not that should be a basis for employment is a different opinion, but if I look at it from various perspectives, I can see value for myself or for my prospective employer.
+* **What is your biggest weakness?**  I used to think this question was antagonistic, but the more experience I gain, the more answers I develop for this question.  I really do see the ability to answer this question meaningfully as a proxy for behavioral development and emotional intelligence.  “Biggest” is a hyperbole, the point is to understand problems you have with yourself and to show you can reflect on yourself in both positive and negative light, hopefully in an objective manner.  For example, I can become overly defensive when my product is being criticized.  It usually doesn’t happen except during dry-runs of presentations.  The buildup of stress from the endless revisions and critiques with no suggestions rubs me the wrong way and I get frustrated.  I then talk about what I do when that happens, how do I notice it, etc.
+
+There are also more interview-oriented prompts on soft-skills.  The goal here is to show introspection, not that you don’t have problems.  I want to show that I have experienced problems before and thought about why it happened and how to prevent it:
+
+* Talk about a time you had a conflict with a colleague
+* Talk about a time you failed to ship something on time
+* Talk about something you worked on that flopped
+* Talk about something you had to lead (team, product, project, change)
+
+Then there’s the really tough technical retrospectives.  These usually require some forethought about what projects to talk about and at least a refresher on what all the individual topics are.  This is like a more real-world talk on system design questions.  I approach these questions backwards, with a list of projects that could answer various questions.  I feel I’m better prepared for unexpected questions this way.  For example:
+
+* What’s the hardest bug you’ve had to solve
+* Describe a system you work on, how you fit into it, and the interfaces to other systems around it
+* Describe a time you had to make a trade-off
+
+### Whiteboard
+
+I’m personally going to buy one.  Maybe a whiteboard board from Home Depot.  I often don’t type during in person interviews.  I do type during phone screens.  Realistically, I should implement both to practice.
+
+### Wireless headphones
+
+I’m at the stage where I can afford $100 headphones for my leisure.  It’s worth it to not have to deal with holding a phone or sounding like you’re at the end of a long tunnel.
+
 ## Primers
 
-These are short but valuable write ups about interviewing in tech.
+These are short but valuable write ups about interviewing in tech.  They’re generally overviews and aren’t specific to any particular topic.  They’re also more to lay the groundwork for the other sections that focus on particular topics.
 
 ### 10 Offers, 100 Days. The Journey by Stepan Parunashvili
 
@@ -68,6 +104,16 @@ When I think of those ideas of deliberate practice, I think about the following 
 ### Don't Call Yourself A Programmer, And Other Career Advice
 
 [This really long blog post](https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/) is one I read a long time ago that reshaped my perception of what in do.  Often, I use the phrase “you weren’t hired to program, you were hired to solve problems.”  Programming often happens to be a really good way to solve problems, but also creates problems.  That’s why other skills around leadership are incredibly useful in enabling yourself to become more valuable to the company.  These skills include people management, project management, and system design, but can also be a diverse technical background, or even specific technician background that just happens to be what the company needs at the time.  I didn’t realize how long it was, suggesting I never finished reading it.
+
+### Lessons from my 5-month job search (TL;DR - great offer from pre-IPO company)
+
+I was browsing the [/r/ExperiencedDevs subreddit](https://www.reddit.com/r/ExperiencedDevs) and found the [top post of all time](https://www.reddit.com/r/ExperiencedDevs/comments/bb4h9y/lessons_from_my_5month_job_search_tldr_great/).  A lot of points in there are things I’ve already settled on.  If I’m looking for a significant compensation increase, then investing money in myself on tools like Pramp, interviewing.io, educative.io, a whiteboard, and books should be a no-brainer.
+
+There were a few things I wanted to highlight that isn’t part of the other materials I’ve written about:
+
+* **“Invest in a good headset.”**  I think going hands free in a quiet room is pretty freeing for phone calls.  It’s weird to hold a phone while typing.  It’s also weird to sound like you’re at the end of a tunnel full of clacking hail on a tin roof.
+* **“Have multiple solid reasons for why you're looking for a new job, because you'll get asked this a lot.”**  It’s not clear from my current text but I have a Google Doc detailing my personal reflections on my process, mostly containing all the personal information surrounding my motivations.  It’s good to have one that’s is for yourself, but also one to tell your employers.  Not every reason needs to be said, but I definitely have reasons to say during the interview.
+* **“Have good stories about things you worked on. Biggest challenges, how you resolved disagreements, things you would have done differently, etc.”**  This is yet another topic I write thoroughly about in my private Google Doc.  It contains a list of prompts and some thoughts on things I could answer with.  I think it’s a really good idea to reflect on projects I’ve worked on and how it draws upon the non-technical issues that occur in the workplace: conflict, scheduling, negotiation, miscommunication, setbacks, deadlines, misinterpretations.
 
 ## Algorithms
 
