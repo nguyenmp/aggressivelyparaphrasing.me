@@ -65,6 +65,10 @@ Overall, this is more of a fun read than a serious one for my particular goals h
 
 When I think of those ideas of deliberate practice, I think about the following sections, that I’ve practiced algorithms significantly over the last five to six years, but have very little practice and experience around system design questions and experience questions.  It’s also clear those are required to getting to the next level.  As such, I’ll spend most of my time on the latter, since that’s where I need the most growth.
 
+### Don't Call Yourself A Programmer, And Other Career Advice
+
+[This really long blog post](https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/) is one I read a long time ago that reshaped my perception of what in do.  Often, I use the phrase “you weren’t hired to program, you were hired to solve problems.”  Programming often happens to be a really good way to solve problems, but also creates problems.  That’s why other skills around leadership are incredibly useful in enabling yourself to become more valuable to the company.  These skills include people management, project management, and system design, but can also be a diverse technical background, or even specific technician background that just happens to be what the company needs at the time.  I didn’t realize how long it was, suggesting I never finished reading it.
+
 ## Algorithms
 
 For the most part, I feel like I have the basics down and there’s established systems of studying for this type of interview.  In particular, I feel like this category is much like the SAT, where you can learn how to answer these types of questions, rather than any particular innate talent.  Moreover, like the SAT, practice really does significantly improve performance.
@@ -127,6 +131,24 @@ Additionally, there is a lot of content on that page near the end.  I’ll be lo
 > Remember that the worst outcome from an interview is to decide that the person needs an additional interview before a decision can be made
 
 Wow.  This is a thought that I’ve never really considered much before.  I’ve interviewed before and have left the room a few times feeling uncertain of either decision to pass on the candidate, or push forward.  I’m internalizing this idea that it’s the worst outcome possible and I’m wondering how much of a hyperbole and exaggeration it is.
+
+> As the interviewer, it’s important to go into the session with a sense of the features you’d like to build (balanced for difficulty and time to solve), situations that scale those features, and a baseline solution in case the interviewee is horribly stuck.
+
+I’m reinterpreting the above as:
+
+1. The features well go through
+2. Prompts for scaling forward
+3. The minimum bar
+
+Lots of stuff here is new to me.
+
+> If in doubt, opt for keeping quiet a bit longer. We’re used to helping each other in real life, but the goal here is assessment, not success with the design.
+
+I feel like I knew this, but I wonder if there’s a difference here in algorithms and data structures interviews.
+
+> If something important wasn’t covered, consider it for the feedback. The candidate might even specify some high-level API to nail down the specs to concrete use cases.
+
+I don’t even know what this means.  It feels like two disjoint sentences in my head, so maybe I’m misreading it.
 
 ### Grokking the System Design Interview
 
@@ -230,7 +252,11 @@ I’ve never read [this piece](http://randsinrepose.com/archives/the-business/) 
 
 ### Getting to Yes
 
+Recommended by Patio11 in [his post about career advice](https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/).  Also, I’ve seen this book around a couple of times.
+
 ### Never Split the Difference
+
+The negotiation book by an FBI hostage negotiator.  That background makes this book interesting to me.
 
 ## Practicing
 
