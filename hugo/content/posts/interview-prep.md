@@ -115,9 +115,13 @@ There were a few things I wanted to highlight that isn’t part of the other mat
 * **“Have multiple solid reasons for why you're looking for a new job, because you'll get asked this a lot.”**  It’s not clear from my current text but I have a Google Doc detailing my personal reflections on my process, mostly containing all the personal information surrounding my motivations.  It’s good to have one that’s is for yourself, but also one to tell your employers.  Not every reason needs to be said, but I definitely have reasons to say during the interview.
 * **“Have good stories about things you worked on. Biggest challenges, how you resolved disagreements, things you would have done differently, etc.”**  This is yet another topic I write thoroughly about in my private Google Doc.  It contains a list of prompts and some thoughts on things I could answer with.  I think it’s a really good idea to reflect on projects I’ve worked on and how it draws upon the non-technical issues that occur in the workplace: conflict, scheduling, negotiation, miscommunication, setbacks, deadlines, misinterpretations.
 
+### What's it like to interview at Amazon?
+
 [Amazon has a blog post](https://blog.aboutamazon.com/working-at-amazon/whats-it-like-to-interview-at-amazon) detailing their interview process.
 
 There’s a clear focus on leadership and their company principles, which seem applicable elsewhere.  I should read these and study them.
+
+One of the interesting bits they have is their point that although they don’t expect any particular expertise in databases, they do expect a user to understand the trade-offs involved with using a non-relational database like DynamoDB.  I know they have [a white paper](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) so maybe I’ll add it to my systems study guide.
 
 ### Books to Read from /r/ExperiencedDevs
 
@@ -204,6 +208,14 @@ I feel like I knew this, but I wonder if there’s a difference here in algorith
 
 I don’t even know what this means.  It feels like two disjoint sentences in my head, so maybe I’m misreading it.
 
+### System Design Cheatsheet by Vasanth K
+
+[This cheatsheet of a gist](https://gist.github.com/vasanthk/485d1c25737e8e72759f) was linked to at the bottom of the “How to Succeed in a System Design Interview” blog post.  I feel like it’s pretty mediocre since it’s a cheatsheet, but it helped me point out a few things I’m a little unclear about.  Some of it is mostly because the notes were too terse to really understand the point but I researched them anyways.
+
+> Do you understand consistency and coherence?
+
+Why “coherence” and “consistent?”  I looked up the definition of “coherence” and it’s the property of being consistent.  But in memory and caching, they mean slightly different things.  In my head, I just think “correct” but that’s probably insufficient for an interview.
+
 ### Grokking the System Design Interview
 
 [Link](https://www.educative.io/collection/5668639101419520/5649050225344512)
@@ -228,6 +240,10 @@ They have yet another breakdown, but also more study material to go through.
 
 I’ve seen this recommended a few times, might be worth the read.  Most recently, I randomly saw it on Amazon while looking at other books to read.
 
+### DynamoDB white paper
+
+[This white paper](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) might talk about system design and trade offs in databases.
+
 ## Experience, Leadership, Soft Skills
 
 I kind of group up all the soft skills and leadership skills together under “experience”.  I think project management can also fit under here.  Part of the reason is because, in an interview, all of these requirements are checked off together.  People ask about your history leading projects, dealing with conflict, missing deadlines, all to probe at these non-technical skills.  I felt like I was lacking here so I decided to read A LOT about it.  It’s also rather fortunate that there’s a significant amount written on these topics.
@@ -249,6 +265,10 @@ My biggest take-aways are:
 * I need to recap the team lead content
 * managers and leaders are not mind readers
 * publicly praise, privately criticize
+
+### Amazon Leadership Principles
+
+[Documented here](https://www.amazon.jobs/en/principles).
 
 ## Negotiation
 
