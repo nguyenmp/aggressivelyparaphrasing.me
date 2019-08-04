@@ -216,6 +216,50 @@ I don’t even know what this means.  It feels like two disjoint sentences in my
 
 Why “coherence” and “consistent?”  I looked up the definition of “coherence” and it’s the property of being consistent.  But in memory and caching, they mean slightly different things.  In my head, I just think “correct” but that’s probably insufficient for an interview.
 
+> Do you roughly understand IPC and TCP/IP?
+
+While both are a form of message passing, I feel like this question is super general.  IPC can be accomplished with network sockets and TCP/IP.  It can also be accomplished with a myriad of other creative solutions within an operating system.  I decided to just read about IPC in general and go over the common techniques and how they work with [the IPC Wikipedia page](https://en.m.wikipedia.org/wiki/Inter-process_communication).  From there, I looked at some specific topics that’s I’m not used to:
+
+* names pipes, never used this before
+* memory mapped files for message passing
+* 9P protocol, I’ve used it but don’t really know much about it
+* Unix domain sockets
+
+> You should be familiar with the speed of everything your computer can do, including the relative performance of RAM, disk, SSD and your network.
+
+This lead me to find “Google Pro Tip: Use Back-Of-The-Envelope-Calculations To Choose The Best Design”.  I think it’s rather weird to know the specific numbers but I think they’re useful to know the magnitude of them.
+
+Finally, there’s a bunch of links at the bottom to follow up on.
+
+### Google Pro Tip: Use Back-Of-The-Envelope-Calculations To Choose The Best Design
+
+[This post or article](http://highscalability.com/blog/2011/1/26/google-pro-tip-use-back-of-the-envelope-calculations-to-choo.html) wasn’t linked to by a [HackerNews comment](https://news.ycombinator.com/item?id=17908403) and seems to be the actual source of the numbers.  These numbers might be out of date at this point though since it was first published in 2011, 8 years ago.
+
+### From Cheatsheet
+How to rock a systems design interview
+
+System Design Interviewing
+
+Scalability for Dummies
+
+Introduction to Architecting Systems for Scale
+
+Scalable System Design Patterns
+
+Scalable Web Architecture and Distributed Systems
+
+What is the best way to design a web site to be highly scalable?
+
+How web works?
+
+### From giving interview
+
+* The Architecture Interview — Susan Fowler, known for her expertise in distributed systems architecture, shares how to structure and run system design interviews
+* The Complexity Around Giving a System Design interview — Joel Kemp, Lead Software Engineer at Spotify, shares questions you should ask yourself when leading a system design interview
+* The Design Interview From the Interviewer’s Perspective — Joey Addona, Senior Software Engineer at LinkedIn, gives his recommendations for evaluating candidates during a system design interview
+* Engineering Interviews: Grading Rubric — An article in which Medium shares how they assess the qualities they’re seeking in engineering candidates
+
+
 ### Grokking the System Design Interview
 
 [Link](https://www.educative.io/collection/5668639101419520/5649050225344512)
@@ -243,6 +287,12 @@ I’ve seen this recommended a few times, might be worth the read.  Most recentl
 ### DynamoDB white paper
 
 [This white paper](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) might talk about system design and trade offs in databases.
+
+Some notes on staleness:
+
+* [This Quora post](https://www.quora.com/What-is-the-difference-between-storage-S3-and-database-DynamoDB-on-AWS) suggests that the limit went down to 400kb.  The paper suggests this used to be 1mb, but it’s jot clear: “Dynamo targets applications that need to store objects that are relatively small (usually less than 1 MB).”
+* “State is stored as binary objects (i.e., blobs) identified by unique keys.”  It also stores documents now.
+* “No operations span multiple data items and there is no need for relational schema.”  The system now supports aggregate queries and sorts.
 
 ## Experience, Leadership, Soft Skills
 
