@@ -119,6 +119,10 @@ There were a few things I wanted to highlight that isn’t part of the other mat
 
 There’s a clear focus on leadership and their company principles, which seem applicable elsewhere.  I should read these and study them.
 
+### Books to Read from /r/ExperiencedDevs
+
+[Interesting books to potentially look into](https://www.reddit.com/r/ExperiencedDevs/comments/bx1c7w/top_5_books_youve_read_that_have_helped_your/).
+
 ## Algorithms
 
 For the most part, I feel like I have the basics down and there’s established systems of studying for this type of interview.  In particular, I feel like this category is much like the SAT, where you can learn how to answer these types of questions, rather than any particular innate talent.  Moreover, like the SAT, practice really does significantly improve performance.
