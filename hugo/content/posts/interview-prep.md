@@ -288,11 +288,31 @@ I’ve seen this recommended a few times, might be worth the read.  Most recentl
 
 [This white paper](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) might talk about system design and trade offs in databases.
 
+I thought it was interesting they use 99.9% as a way of measuring worst case performance to be more customer centric.  This is compared to average, or median, where the majority of their customers might have a good experience but a sizable number might not.
+
 Some notes on staleness:
 
 * [This Quora post](https://www.quora.com/What-is-the-difference-between-storage-S3-and-database-DynamoDB-on-AWS) suggests that the limit went down to 400kb.  The paper suggests this used to be 1mb, but it’s jot clear: “Dynamo targets applications that need to store objects that are relatively small (usually less than 1 MB).”
 * “State is stored as binary objects (i.e., blobs) identified by unique keys.”  It also stores documents now.
 * “No operations span multiple data items and there is no need for relational schema.”  The system now supports aggregate queries and sorts.
+
+### System Design Primer
+
+[Found this git repo containing a markdown document](https://github.com/donnemartin/system-design-primer) from [a random reddit post](https://www.reddit.com/r/cscareerquestions/comments/cm709j/how_to_prepare_approach_system_design_questions/).
+
+* **CS75 (Summer 2012) Lecture 9 Scalability Harvard Web Development David Malan** definitely feels like an intro to CS class.  Like, it’s pretty advanced for an intro class but if you know a decent amount of web development, it’s kind of slow to watch these students answer these questions.  I watched this video at 2x speed.  I think it does give a nice overview of some concepts but I don’t know if it’s worth it.
+
+### Getting Real About Distributed System Reliability
+
+I found [this blog post](https://blog.empathybox.com/post/19574936361/getting-real-about-distributed-system-reliability) on [a lobsters thread](https://lobste.rs/s/dvqbpw/getting_real_about_distributed_system).
+
+### Availability in Globally Distributed Storage Systems
+
+http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36737.pdf
+
+### How Complex Systems Fail
+
+https://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf
 
 ## Experience, Leadership, Soft Skills
 
@@ -319,6 +339,10 @@ My biggest take-aways are:
 ### Amazon Leadership Principles
 
 [Documented here](https://www.amazon.jobs/en/principles).
+
+### How to approach "Tell me about a time..." interview questions
+
+[This reddit post](https://www.reddit.com/r/ExperiencedDevs/comments/bfrtnr/how_to_approach_tell_me_about_a_time_interview/) has some discussion.
 
 ## Negotiation
 
