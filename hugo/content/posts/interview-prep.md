@@ -344,6 +344,14 @@ My biggest take-aways are:
 
 [This reddit post](https://www.reddit.com/r/ExperiencedDevs/comments/bfrtnr/how_to_approach_tell_me_about_a_time_interview/) has some discussion.
 
+### How About Code Reviews?
+
+Slack has an engineering blog where [they talked about Code Reviews](https://slack.engineering/how-about-code-reviews-2695fb10d034).  I found it when looking at [an /r/cscareerquestions post on that topic](https://www.reddit.com/r/ExperiencedDevs/comments/bxr5gx/what_makes_for_a_good_code_review/).  It references empathy during code review.  This is a phrase I’ve been using personally at work and I find it extremely useful to emphasize the people problem of code reviews.  Often, it feels like we let perfect be the enemy of good.  On the other hand, sometimes, it feels like they cycle of code reviews is too taxing for contributors.  In this perspectives, I think the goals are to lower the barrier of contribution and participation, while also raising the bar of the quality of the code and the knowledge of the contributors.
+
+### On Empathy & Pull Requests
+
+[This blog post](https://slack.engineering/on-empathy-pull-requests-979e4257d158) by Slack is the other perspective of the “How About Code Reviews?” post.  This one focuses on making pull requests, whereas the other focuses on reviewing pull requests.
+
 ## Negotiation
 
 ### How I negotiated a $300,000 job offer in Silicon Valley
