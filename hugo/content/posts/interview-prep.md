@@ -314,6 +314,10 @@ http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/3
 
 https://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf
 
+### The Software Architecture Chronicles
+
+https://herbertograca.com/2017/07/03/the-software-architecture-chronicles/
+
 ## Experience, Leadership, Soft Skills
 
 I kind of group up all the soft skills and leadership skills together under “experience”.  I think project management can also fit under here.  Part of the reason is because, in an interview, all of these requirements are checked off together.  People ask about your history leading projects, dealing with conflict, missing deadlines, all to probe at these non-technical skills.  I felt like I was lacking here so I decided to read A LOT about it.  It’s also rather fortunate that there’s a significant amount written on these topics.
