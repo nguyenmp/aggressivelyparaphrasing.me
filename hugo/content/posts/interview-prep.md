@@ -300,7 +300,7 @@ Some notes on staleness:
 
 [Found this git repo containing a markdown document](https://github.com/donnemartin/system-design-primer) from [a random reddit post](https://www.reddit.com/r/cscareerquestions/comments/cm709j/how_to_prepare_approach_system_design_questions/).
 
-* **CS75 (Summer 2012) Lecture 9 Scalability Harvard Web Development David Malan** definitely feels like an intro to CS class.  Like, it’s pretty advanced for an intro class but if you know a decent amount of web development, it’s kind of slow to watch these students answer these questions.  I watched this video at 2x speed.  I think it does give a nice overview of some concepts but I don’t know if it’s worth it.
+* **CS75 (Summer 2012) Lecture 9 Scalability Harvard Web Development David Malan** definitely feels like an intro to CS class.  Like, it’s pretty advanced for an intro class but if you know a decent amount of web development, it’s kind of slow to watch these students answer these questions.  I watched this video at 2x speed.  I think it does give a nice overview of some concepts but I don’t know if it’s worth it.  The new bits for me are Master-Master and Master-Slave leadership, also known as Active-Active and Active-Passive.  I remember having problems with flapping on an Active-Passive setup.
 
 ### Getting Real About Distributed System Reliability
 
@@ -426,6 +426,9 @@ There should have been practicing this whole time during preparation, but there�
 
 Should probably go under primer or something...
 
+### The 3 most common salary negotiation questions, answered
+
+https://www.reddit.com/r/cscareerquestions/comments/cpfoef/the_3_most_common_salary_negotiation_questions/
 
 
 
