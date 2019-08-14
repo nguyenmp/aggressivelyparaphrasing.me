@@ -434,6 +434,22 @@ Should probably go under primer or something...
 
 https://www.reddit.com/r/cscareerquestions/comments/cpfoef/the_3_most_common_salary_negotiation_questions/
 
+### HOWTO negotiate your salary and benefits - for women
+
+Found https://valerieaurora.org/howto_salary/ on https://lobste.rs/s/rwy6lq/what_are_rules_thumb_for_salary
+
+### Ten Rules for Negotiating a Job Offer
+
+Also found https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/ from https://lobste.rs/s/rwy6lq/what_are_rules_thumb_for_salary
+
+### How Not to Bomb Your Offer Negotiation
+
+Found https://haseebq.com/how-not-to-bomb-your-offer-negotiation/ from https://lobste.rs/s/rwy6lq/what_are_rules_thumb_for_salary
+
+
+
+
+
 
 
 
