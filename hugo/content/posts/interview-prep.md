@@ -356,6 +356,14 @@ Slack has an engineering blog where [they talked about Code Reviews](https://sla
 
 [This blog post](https://slack.engineering/on-empathy-pull-requests-979e4257d158) by Slack is the other perspective of the “How About Code Reviews?” post.  This one focuses on making pull requests, whereas the other focuses on reviewing pull requests.
 
+### How to do a code review by Google
+
+[How to do a code review by Google](https://google.github.io/eng-practices/review/reviewer/).
+
+### Radical candor
+
+Recommended by Jon.
+
 ## Negotiation
 
 ### How I negotiated a $300,000 job offer in Silicon Valley
