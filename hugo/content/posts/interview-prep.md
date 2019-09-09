@@ -308,11 +308,11 @@ I found [this blog post](https://blog.empathybox.com/post/19574936361/getting-re
 
 ### Availability in Globally Distributed Storage Systems
 
-http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36737.pdf
+[Availability in Globally Distributed Storage Systems by Google](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36737.pdf)
 
 ### How Complex Systems Fail
 
-https://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf
+[How Complex Systems Fail by MIT](https://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf)
 
 ### The Software Architecture Chronicles
 
@@ -432,19 +432,23 @@ Should probably go under primer or something...
 
 ### The 3 most common salary negotiation questions, answered
 
-https://www.reddit.com/r/cscareerquestions/comments/cpfoef/the_3_most_common_salary_negotiation_questions/
+[The 3 most common salary negotiation questions, answered](https://www.reddit.com/r/cscareerquestions/comments/cpfoef/the_3_most_common_salary_negotiation_questions/)
 
 ### HOWTO negotiate your salary and benefits - for women
 
-Found https://valerieaurora.org/howto_salary/ on https://lobste.rs/s/rwy6lq/what_are_rules_thumb_for_salary
+Found https://valerieaurora.org/howto_salary/ on [What are rules of thumb for salary negotiation?](https://lobste.rs/s/rwy6lq/what_are_rules_thumb_for_salary)
 
 ### Ten Rules for Negotiating a Job Offer
 
-Also found https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/ from https://lobste.rs/s/rwy6lq/what_are_rules_thumb_for_salary
+Also found https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/ from [What are rules of thumb for salary negotiation?](https://lobste.rs/s/rwy6lq/what_are_rules_thumb_for_salary)
 
 ### How Not to Bomb Your Offer Negotiation
 
-Found https://haseebq.com/how-not-to-bomb-your-offer-negotiation/ from https://lobste.rs/s/rwy6lq/what_are_rules_thumb_for_salary
+Found https://haseebq.com/how-not-to-bomb-your-offer-negotiation/ from [What are rules of thumb for salary negotiation?](https://lobste.rs/s/rwy6lq/what_are_rules_thumb_for_salary)
+
+## My Questions for Them
+
+https://github.com/viraptor/reverse-interview/blob/master/README.md
 
 
 
