@@ -84,6 +84,12 @@ footer {
     content: " | "
 }
 
+/* Lists */
+
+main ul, ol {
+    margin-left: 2rem;
+}
+
 /* Table of Contents */
 
 #TableOfContents {
@@ -98,19 +104,17 @@ footer {
     content: "Table of Contents";
 }
 
-#TableOfContents ul, #TableOfContents li {
+#TableOfContents > ul {
+    margin-left: 0rem;  /* This overrides the property from main ul */
+}
+
+#TableOfContents > ul > li {
     list-style: none;
     margin: 0rem;
 }
 
 #TableOfContents ul ul {
-    list-style: none;
-    margin-left: 2rem;
-}
-
-/* Lists */
-
-main ul, ol {
+    list-style: outside;
     margin-left: 2rem;
 }
 
