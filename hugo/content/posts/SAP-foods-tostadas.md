@@ -2,7 +2,7 @@
 title: "SAP Foods Tostadas"
 date: 2019-11-24T03:59:40Z
 tags:
-- SAP Foods
+- sap-foods
 ---
 
 Delicious.  Would recommend.
