@@ -1,6 +1,8 @@
 ---
 title: "City Streats and Smoking Pig at SAP Center"
 date: 2019-10-14T02:08:04Z
+tags:
+- SAP Foods
 ---
 
 Today I got to try a new item at the rotating City Streats stall and my first time at the Smoking Pig in the SAP Center.  Here are my thoughts.
