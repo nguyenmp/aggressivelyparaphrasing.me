@@ -1,10 +1,16 @@
 ---
-title: "Housework"
+title: "Office Housework"
 date: 2019-10-24T17:25:13Z
 draft: true
 ---
 
-I was reading a post on ExperiencedDevs asking about women in engineering when I stumbled across [an article](https://www.hbs.edu/faculty/Pages/item.aspx?num=10807) talking about how women are more likely to volunteer for office housework.
+This is a reply and a reflection of an article I stumbled across an article titled ["Why Women Volunteer for Tasks That Don’t Lead to Promotions"](https://www.hbs.edu/faculty/Pages/item.aspx?num=10807).  To give credit, I found this while reading [a post on /r/ExperiencedDevs](https://www.reddit.com/r/ExperiencedDevs/comments/dagjzx/how_many_devs_here_are_women/f1t1d00/).
+
+In this, I wanted to focus on a particular concept that I found very interesting: office housework.  Below is a quote lifted from the piece that helps define office housework.
+
+> Here’s a work scenario many of us know too well: You are in a meeting and your manager brings up a project that needs to be assigned. It’s not particularly challenging work, but it’s time-consuming, unlikely to drive revenue, and probably won’t be recognized or included in your performance evaluation. As your manager describes the project and asks for a volunteer, you and your colleagues become silent and uneasy, everyone hoping that someone else will raise their hand. The wait becomes increasingly uncomfortable. Then, finally, someone speaks up: “Okay, I’ll do it.”
+
+> Non-promotable tasks are those that benefit the organization but likely don’t contribute to someone’s performance evaluation and career advancement. These tasks include traditional office “housework,” such as organizing a holiday party, as well as a much wider set of tasks, such as filling in for a colleague, serving on a low-ranking committee, or taking on routine work that doesn’t require much skill or produce much impact.
 
 
 {{< break >}}
