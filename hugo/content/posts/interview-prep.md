@@ -127,6 +127,10 @@ One of the interesting bits they have is their point that although they don’t 
 
 [Interesting books to potentially look into](https://www.reddit.com/r/ExperiencedDevs/comments/bx1c7w/top_5_books_youve_read_that_have_helped_your/).
 
+### Software Engineering Promotions: Advice to Get to That Next Level
+
+https://blog.pragmaticengineer.com/software-engineering-promotions/
+
 ## Algorithms
 
 For the most part, I feel like I have the basics down and there’s established systems of studying for this type of interview.  In particular, I feel like this category is much like the SAT, where you can learn how to answer these types of questions, rather than any particular innate talent.  Moreover, like the SAT, practice really does significantly improve performance.
