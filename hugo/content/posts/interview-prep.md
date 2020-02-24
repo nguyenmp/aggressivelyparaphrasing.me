@@ -131,6 +131,10 @@ One of the interesting bits they have is their point that although they don’t 
 
 https://blog.pragmaticengineer.com/software-engineering-promotions/
 
+### The Art of the Awkward 1:1
+
+https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c
+
 ## Algorithms
 
 For the most part, I feel like I have the basics down and there’s established systems of studying for this type of interview.  In particular, I feel like this category is much like the SAT, where you can learn how to answer these types of questions, rather than any particular innate talent.  Moreover, like the SAT, practice really does significantly improve performance.
