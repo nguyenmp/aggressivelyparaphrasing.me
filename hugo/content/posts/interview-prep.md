@@ -163,6 +163,14 @@ I’ve also see this recommended but it seems way too much at 750 pages.
 
 This is kind of the “next level” technical interview question.  Im rather disappointed by the lack of prep material available in this space, mostly because actual experience for these things can be hard to come by.  In particular, I don’t work on high scale systems very much, though I do understand them and manage a few low scale systems myself.  Because of this, I feel like I need to learn significantly more.
 
+
+### Gainlo
+
+http://blog.gainlo.co/index.php/category/system-design-interview-questions/
+
+https://www.reddit.com/r/ExperiencedDevs/comments/h7fjx2/how_to_prepare_for_system_design_interview/
+
+
 ### How to Succeed in a System Design Interview by Pramp
 
 [This blog post](https://blog.pramp.com/how-to-succeed-in-a-system-design-interview-27b35de0df26) by Practice Makes Perfect (Pramp) has a helpful step by step guide to approach system design questions.
