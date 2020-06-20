@@ -275,6 +275,12 @@ How web works?
 * The Design Interview From the Interviewer’s Perspective — Joey Addona, Senior Software Engineer at LinkedIn, gives his recommendations for evaluating candidates during a system design interview
 * Engineering Interviews: Grading Rubric — An article in which Medium shares how they assess the qualities they’re seeking in engineering candidates
 
+### Crack the System Design Interview by Tian Pan
+
+https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview/
+
+From Blind
+
 
 ### Grokking the System Design Interview
 
