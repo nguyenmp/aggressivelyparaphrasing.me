@@ -198,6 +198,10 @@ Once you have the basic premise solidified, cycle between:
 
 Additionally, there is a lot of content on that page near the end.  I’ll be looking at them independently.
 
+### System Design Interview Guide
+
+https://www.youtube.com/channel/UC9vLsnF6QPYuH51njmIooCQ
+
 ### The Complete System Design Interviewer Guide
 
 [This blog post](https://blog.pramp.com/the-complete-system-design-interviewer-guide-e5d273724db8) was found at the bottom of “How to Succeed in a System Design Interview” by the same author.  I think it is interesting because it’s looking at the interview from the other side of the table, as an interviewer.
