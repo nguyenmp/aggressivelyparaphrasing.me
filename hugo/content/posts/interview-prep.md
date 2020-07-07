@@ -170,6 +170,8 @@ http://blog.gainlo.co/index.php/category/system-design-interview-questions/
 
 https://www.reddit.com/r/ExperiencedDevs/comments/h7fjx2/how_to_prepare_for_system_design_interview/
 
+Definitely disable Javascript or enable Reader Mode because they use "hello bar" which takes over the screen after like 3 minutes.  Worst part is, the alert doesn't have an (x) to close things out.
+
 
 ### How to Succeed in a System Design Interview by Pramp
 
